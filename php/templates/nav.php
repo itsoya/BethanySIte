@@ -1,0 +1,39 @@
+<!--Banner-->
+<div class="jumbotron">
+  <a href="index.php" id="logo"><img class="navbar-brand" src="img/logo.png" alt="logo of Bethany Negash Foundation"></a>
+  <div class="container text-center">
+    <h1>Bethany Negash Foundation</h1>
+    <p>Non Profit Organization</p>
+  </div>
+</div>
+<!--End of Banner-->
+<!--Navigation-->
+<nav class="navbar navbar-inverse navbar-static-top" id="my-navbar">
+  <a href="index.php" ><img id="miniLogo" src="img/miniLogo.png" alt="logo of Bethany Negash Foundation"></a>
+  <div class="container">
+    <div class="navbar-header">
+      <!--Navigation button-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!--End of navigation button-->
+    <!--Navigation Menu-->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#">nav</a></li>
+        <li><a href="#">nav</a></li>
+        <li><a href="#">nav</a></li>
+        <li><a href="#">nav</a></li>
+        <li><a href="#">nav</a></li>
+        <li><a href="#">nav</a></li>
+        <li><a href="#">nav</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Container-->
+</nav>
+<!-- End Navigation -->
