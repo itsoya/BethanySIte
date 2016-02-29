@@ -24,8 +24,8 @@
     <!--Navigation Menu-->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="#">nav</a></li>
-        <li><a href="#">nav</a></li>
+        <li><a href="about.php">About Us</a></li>
+        <li><a href="donate.php">Donate</a></li>
         <li><a href="#">nav</a></li>
         <li><a href="#">nav</a></li>
         <li><a href="#">nav</a></li>

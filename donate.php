@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<!--
-TO DO LIST:
-*Add Favicon
-*Content frames
-*Add navigation links & create pages
--->
 <html lang="en">
 	<head>
 		<?php require 'php/templates/heading.php';?>
