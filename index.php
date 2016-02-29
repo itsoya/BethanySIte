@@ -14,6 +14,7 @@ TO DO LIST:
 		<?php require 'php/templates/nav.php';?>
 		<body data-spy="scroll" data-target="#my-navbar">
 			<div class="row container">
+			d
 			</div>
 			<!--End of container fluid-->
 			<!--Top of page-->
