@@ -4,6 +4,9 @@ TO DO LIST:
 *Add Favicon
 *Content frames
 *Add navigation links & create pages
+
+Optional: 
++Progress circles: http://www.jqueryscript.net/loading/Simple-Circle-Progress-Indicator-Plugin-with-jQuery-CSS3-Progress-Circle.html
 -->
 <html lang="en">
 	<head>
@@ -14,8 +17,9 @@ TO DO LIST:
 		<?php require 'php/templates/nav.php';?>
 		<body data-spy="scroll" data-target="#my-navbar">
 
-			<div class="row container main-wrapper">
+			<div class="container main-wrapper">
 
+				<div class="row">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 						<!-- Slide indicators -->
 						<ol class="carousel-indicators">
@@ -37,12 +41,114 @@ TO DO LIST:
 							</div>
 						</div>
 					</div>
-					
-					<p>Bacon ipsum dolor amet cow leberkas hamburger capicola, meatloaf pastrami salami alcatra flank. Bacon jerky spare ribs, rump capicola doner flank meatball. Venison pork loin capicola porchetta frankfurter swine. Sausage capicola shankle strip steak doner bacon turducken corned beef jerky kielbasa ground round pancetta.Beef salami ground round alcatra. Pork loin shank chuck brisket porchetta pork ball tip capicola. Prosciutto cupim beef ribs, t-bone drumstick beef ribeye pork belly jowl porchetta sirloin. Pork belly shoulder fatback pig jerky salami.Meatball shank short ribs, cupim pork loin kevin beef ribs leberkas. Drumstick meatloaf tail turkey. Meatball leberkas bresaola, pork chop shankle capicola beef jerky alcatra chuck porchetta. Ground round pig picanha pork belly boudin ribeye chicken.Venison chuck prosciutto sirloin ball tip swine filet mignon jerky. Ham hock alcatra pork belly prosciutto pork loin meatball. Porchetta chuck filet mignon, short loin tri-tip pastrami spare ribs. Capicola pork belly kielbasa tail venison ham hock boudin swine doner tongue jowl pig flank rump andouille. Shoulder pig shank landjaeger shankle alcatra meatball fatback drumstick pork chop. Jerky meatball meatloaf corned beef turducken t-bone. Beef ribs pork loin fatback corned beef chuck kevin capicola tenderloin doner jerky meatloaf bresaola tail chicken.Shank biltong porchetta tail ground round, jowl spare ribs venison. Jowl swine pancetta ribeye salami drumstick. Ham hock shankle short loin brisket tail bresaola, cupim tongue sirloin prosciutto drumstick flank biltong shoulder bacon. Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
-					<p>Bacon ipsum dolor amet cow leberkas hamburger capicola, meatloaf pastrami salami alcatra flank. Bacon jerky spare ribs, rump capicola doner flank meatball. Venison pork loin capicola porchetta frankfurter swine. Sausage capicola shankle strip steak doner bacon turducken corned beef jerky kielbasa ground round pancetta.Beef salami ground round alcatra. Pork loin shank chuck brisket porchetta pork ball tip capicola. Prosciutto cupim beef ribs, t-bone drumstick beef ribeye pork belly jowl porchetta sirloin. Pork belly shoulder fatback pig jerky salami.Meatball shank short ribs, cupim pork loin kevin beef ribs leberkas. Drumstick meatloaf tail turkey. Meatball leberkas bresaola, pork chop shankle capicola beef jerky alcatra chuck porchetta. Ground round pig picanha pork belly boudin ribeye chicken.Venison chuck prosciutto sirloin ball tip swine filet mignon jerky. Ham hock alcatra pork belly prosciutto pork loin meatball. Porchetta chuck filet mignon, short loin tri-tip pastrami spare ribs. Capicola pork belly kielbasa tail venison ham hock boudin swine doner tongue jowl pig flank rump andouille. Shoulder pig shank landjaeger shankle alcatra meatball fatback drumstick pork chop. Jerky meatball meatloaf corned beef turducken t-bone. Beef ribs pork loin fatback corned beef chuck kevin capicola tenderloin doner jerky meatloaf bresaola tail chicken.Shank biltong porchetta tail ground round, jowl spare ribs venison. Jowl swine pancetta ribeye salami drumstick. Ham hock shankle short loin brisket tail bresaola, cupim tongue sirloin prosciutto drumstick flank biltong shoulder bacon. Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
-					<p>Bacon ipsum dolor amet cow leberkas hamburger capicola, meatloaf pastrami salami alcatra flank. Bacon jerky spare ribs, rump capicola doner flank meatball. Venison pork loin capicola porchetta frankfurter swine. Sausage capicola shankle strip steak doner bacon turducken corned beef jerky kielbasa ground round pancetta.Beef salami ground round alcatra. Pork loin shank chuck brisket porchetta pork ball tip capicola. Prosciutto cupim beef ribs, t-bone drumstick beef ribeye pork belly jowl porchetta sirloin. Pork belly shoulder fatback pig jerky salami.Meatball shank short ribs, cupim pork loin kevin beef ribs leberkas. Drumstick meatloaf tail turkey. Meatball leberkas bresaola, pork chop shankle capicola beef jerky alcatra chuck porchetta. Ground round pig picanha pork belly boudin ribeye chicken.Venison chuck prosciutto sirloin ball tip swine filet mignon jerky. Ham hock alcatra pork belly prosciutto pork loin meatball. Porchetta chuck filet mignon, short loin tri-tip pastrami spare ribs. Capicola pork belly kielbasa tail venison ham hock boudin swine doner tongue jowl pig flank rump andouille. Shoulder pig shank landjaeger shankle alcatra meatball fatback drumstick pork chop. Jerky meatball meatloaf corned beef turducken t-bone. Beef ribs pork loin fatback corned beef chuck kevin capicola tenderloin doner jerky meatloaf bresaola tail chicken.Shank biltong porchetta tail ground round, jowl spare ribs venison. Jowl swine pancetta ribeye salami drumstick. Ham hock shankle short loin brisket tail bresaola, cupim tongue sirloin prosciutto drumstick flank biltong shoulder bacon. Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
-					<p>Bacon ipsum dolor amet cow leberkas hamburger capicola, meatloaf pastrami salami alcatra flank. Bacon jerky spare ribs, rump capicola doner flank meatball. Venison pork loin capicola porchetta frankfurter swine. Sausage capicola shankle strip steak doner bacon turducken corned beef jerky kielbasa ground round pancetta.Beef salami ground round alcatra. Pork loin shank chuck brisket porchetta pork ball tip capicola. Prosciutto cupim beef ribs, t-bone drumstick beef ribeye pork belly jowl porchetta sirloin. Pork belly shoulder fatback pig jerky salami.Meatball shank short ribs, cupim pork loin kevin beef ribs leberkas. Drumstick meatloaf tail turkey. Meatball leberkas bresaola, pork chop shankle capicola beef jerky alcatra chuck porchetta. Ground round pig picanha pork belly boudin ribeye chicken.Venison chuck prosciutto sirloin ball tip swine filet mignon jerky. Ham hock alcatra pork belly prosciutto pork loin meatball. Porchetta chuck filet mignon, short loin tri-tip pastrami spare ribs. Capicola pork belly kielbasa tail venison ham hock boudin swine doner tongue jowl pig flank rump andouille. Shoulder pig shank landjaeger shankle alcatra meatball fatback drumstick pork chop. Jerky meatball meatloaf corned beef turducken t-bone. Beef ribs pork loin fatback corned beef chuck kevin capicola tenderloin doner jerky meatloaf bresaola tail chicken.Shank biltong porchetta tail ground round, jowl spare ribs venison. Jowl swine pancetta ribeye salami drumstick. Ham hock shankle short loin brisket tail bresaola, cupim tongue sirloin prosciutto drumstick flank biltong shoulder bacon. Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
-			</div>
+				</div> <!-- end row -->
+						
+				<div class="row">
+					<h1>Our Stories</h1>
+					<div class="col-md-4">
+						<div class="custom-spacing4">
+							<h4 class="project-title">Books for Kids</h4>
+							<p>Blurb about books for kids</p>
+							<p>Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
+							<button type="button" class="btn btn-info">Learn More!</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="custom-spacing4">
+							<h4 class="project-title">Computer Literacy</h4>
+							<p>Blurb computer literacy project</p>
+							<p>Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
+							<button type="button" class="btn btn-info">Learn More!</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="custom-spacing4">
+							<h4 class="project-title">Empowering the Youth</h4>
+							<p>Blurb empowering youth with skills for the future</p>
+							<p>Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
+							<button type="button" class="btn btn-info">Learn More!</button>
+						</div>
+					</div>
+				</div> <!-- end row -->
+
+				<div class="row">
+					<h1>Our Facility</h1>
+					<div class="col-md-4">
+						<div class="custom-spacing4">
+							<img src="img/facility/image_1.jpg" class="fac-img" alt="BNF facility">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="custom-spacing4">
+							<img src="img/facility/image_9.jpg" class="fac-img" alt="BNF facility">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="custom-spacing4">
+							<img src="img/facility/image_14.jpg" class="fac-img" alt="BNF facility">
+						</div>
+					</div>
+				</div> <!-- end row -->
+
+				<div class="row">
+					<h1>Statistics</h1>
+
+					<div class="col-md-4">
+						<span class="glyphicon glyphicon-globe glyph-custom" aria-hidden="true"></span>
+						<h2>Visitors 2016</h2>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+								70/100
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<span class="glyphicon glyphicon-piggy-bank glyph-custom" aria-hidden="true"></span>
+						<h2>Donations 2016</h2>
+						<div class="progress">
+							<div class="progress-bar progress-bar-success" style="width:35%">
+								<span class="sr-only">35%</span>
+							</div>
+							<div class="progress-bar progress-bar-warning" style="width:25%">
+								<span class="sr-only">25%</span>
+							</div>
+							<div class="progress-bar progress-bar-danger" style="width:15%">
+								<span class="sr-only">15%</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<span class="glyphicon glyphicon-apple glyph-custom" aria-hidden="true"></span>
+						<h2>Children Helped 2016</h2>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+								70/100
+							</div>
+						</div>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row">
+					<h1>Our Mission</h1>
+
+					<div class="col-md-3">
+						<img src="img/facility/Image_11.jpg" class="fac-img" alt="BNF facility image">
+					</div>
+					<div class="col-md-9">
+						<p>Katana jeans sensory human augmented reality refrigerator San Francisco denim. Tattoo augmented reality corrupted hotdog geodesic tiger-team shrine sub-orbital RAF rifle. Uplink Tokyo-space monofilament receding tube sensory faded. Girl digital math-voodoo god nodality decay ablative monofilament film cardboard bicycle gang San Francisco sign bridge grenade. Digital cyber-faded decay wonton soup Chiba into receding artisanal sub-orbital. Tattoo augmented reality corrupted hotdog geodesic tiger-team shrine sub-orbital RAF rifle. Uplink Tokyo-space monofilament receding tube sensory faded. Girl digital math-voodoo god nodality decay ablative monofilament film cardboard bicycle gang San Francisco sign bridge grenade. Digital cyber-faded decay wonton soup Chiba into receding artisanal sub-orbitalKatana jeans sensory human augmented reality refrigerator San Francisco denim. Tattoo augmented reality corrupted hotdog geodesic tiger-team shrine sub-orbital RAF rifle. Uplink Tokyo-space monofilament receding tube sensory faded. Girl digital math-voodoo god nodality decay ablative monofilament film cardboard bicycle gang San Francisco sign bridge grenade. Digital cyber-faded decay wonton soup Chiba into receding artisanal sub-orbital. Tattoo augmented reality corrupted hotdog geodesic tiger-team shrine sub-orbital RAF rifle. Uplink Tokyo-space monofilament receding tube sensory faded. Girl digital math-voodoo god nodality decay ablative monofilament film cardboard bicycle gang San Francisco sign bridge grenade. Digital cyber-faded decay wonton soup Chiba into receding artisanal sub-orbital</p>
+					</div>
+				</div> <!-- end row -->
+
+				<div class="row">
+					<div class="col-md-12">
+						<button type="button" class="btn btn-success donate-btn-custom">Donate</button>
+					</div>
+				</div>
+
+			</div> <!-- end container -->
 
 			<!--End of container fluid-->
 
