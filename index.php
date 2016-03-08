@@ -5,7 +5,7 @@ TO DO LIST:
 *Content frames
 *Add navigation links & create pages
 
-Optional: 
+Optional:
 +Progress circles: http://www.jqueryscript.net/loading/Simple-Circle-Progress-Indicator-Plugin-with-jQuery-CSS3-Progress-Circle.html
 -->
 <html lang="en">
@@ -42,7 +42,7 @@ Optional:
 						</div>
 					</div>
 				</div> <!-- end row -->
-						
+
 				<div class="row">
 					<h1>Our Stories</h1>
 					<div class="col-md-4">

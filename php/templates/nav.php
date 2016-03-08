@@ -2,14 +2,14 @@
 <div class="jumbotron">
   <a href="index.php" id="logo"><img class="navbar-brand" src="img/logo.png" alt="logo of Bethany Negash Foundation"></a>
   <div class="container text-center">
-    <h1>Bethany Negash Foundation</h1>
-    <p>Non Profit Organization</p>
+    <h1>The Bethany Negash Memorial Foundation Inc</h1>
+    <p>Transforming the lives of children through education</p>
   </div>
 </div>
 <!--End of Banner-->
 <!--Navigation-->
 <nav class="navbar navbar-inverse navbar-static-top" id="my-navbar">
-  <a href="index.php" ><img id="miniLogo" src="img/miniLogo.png" alt="logo of Bethany Negash Foundation"></a>
+  <a href="index.php" ><img id="miniLogo" src="img/miniLogo.png" alt="logo of Bethany Negash Foundation mini version"></a>
   <div class="container">
     <div class="navbar-header">
       <!--Navigation button-->

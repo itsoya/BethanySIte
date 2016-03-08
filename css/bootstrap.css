@@ -5492,8 +5492,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 .navbar-brand {
   float: left;
-  height: 248px;
-  width: 446px;
+  height: 110px;
+  width: 380px;
 }
 
 .navbar-brand:hover,
@@ -5954,6 +5954,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: #101010;
+  overflow: hidden;
 }
 
 .navbar-inverse .navbar-nav > .open > a,
