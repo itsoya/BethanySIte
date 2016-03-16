@@ -130,6 +130,7 @@ Maybes: Set up admin pages and get general dashboard -->
 								</div> <!-- end row -->
 							</div>
 							<!--End of container fluid & main-wrapper-->
+							<a href="admin/pages/index.php">ADMIN</a>
 							<?php require 'php/templates/footer.php';?>
 							<?php require 'php/templates/footing.php';?>
 						</body>

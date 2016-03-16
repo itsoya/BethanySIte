@@ -33,11 +33,12 @@
 <div class="sidebar-nav navbar-collapse">
 <ul class="nav" id="side-menu">
     <li>
+        <a href="index.php">DashBoard Page</a>
+    </li>
+    <li>
         <a href="blank.php">Blank Page</a>
     </li>
-    <li>
-        <a href="index.php">index Page</a>
-    </li>
+
     <li>
         <a href="login.php">Login Page</a>
     </li>
@@ -46,9 +47,7 @@
     </li>
     <li>
         <a href="login.php">Login Page</a>
-    </li>
-    <li>
-        <a href="login.php">Login Page</a>
+        create admin, nav pages, link to real site
     </li>
 </ul>
 </div>
