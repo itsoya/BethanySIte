@@ -5,7 +5,7 @@ Maybes: Set up admin pages and get general dashboard
 
 Thiem's todo list
 + color design
-+ stat overlay for clicking on stat icons - use ajax to pull info onto the overlay
++ stat overlay for clicking on stat icons - use ajax to pull info onto the overlay - uses index.js
 + implement Minh's backend code for real time updates
 -->
 <html lang="en">
@@ -72,7 +72,7 @@ Thiem's todo list
 			<hr>
 			<div class="row">
 				<h1>Latest Projects</h1>
-				<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="col-lg-4 col-xs-12">
 					<div class="box-panel">
 						<a href="#">
 							<div>
@@ -84,7 +84,7 @@ Thiem's todo list
 						</a>
 					</div> <!-- end box-panel -->
 				</div> <!-- end col -->
-				<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="col-lg-4 col-xs-12">
 					<div class="box-panel">
 						<a href="#">
 							<div>
@@ -96,7 +96,7 @@ Thiem's todo list
 						</a>
 					</div> <!-- end box-panel -->
 				</div> <!-- end col -->
-				<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="col-lg-4 col-xs-12">
 					<div class="box-panel">
 						<a href="#">
 							<div>
@@ -148,7 +148,7 @@ Thiem's todo list
 			</div> <!-- end row -->
 
 			<div class="custom-modal-overlay">
-				
+
 			</div>
 
 		</div> <!-- end main-wrapper -->
