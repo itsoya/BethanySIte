@@ -11,7 +11,7 @@
 				<li> <a href="https://www.linkedin.com/company/kennesaw-state-university"><img src="img/icons/linkedin_round.png" alt="LinkedIn"></a></li>
 				<li> <a href="https://plus.google.com/u/0/+kennesawstateuniversity/posts"><img src="img/icons/google_round.png" alt="Google Plus"></a></li>
 				<li> <a href="http://instagram.com/kennesawstateuniversity"><img src="img/icons/instagram_round.png" alt="Instagram"></a></li>
-				<li> <a href="https://www.youtube.com/user/KennesawStatenow"><img src="img/icons/youtube_round.png" alt="Youtube"></a></li>
+				<li> <a href="/admin/pages/login.html"><img src="img/icons/youtube_round.png" alt="Youtube"></a></li>
 			</ul>
 		</div>
 		<p>&copy;  2016 Bethany Negash Foundation. All Rights Reserved.</p>
