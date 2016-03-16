@@ -28,7 +28,6 @@
         <li><a href="about.php">About Us</a></li>
         <li><a href="donate.php">Donate</a></li>
         <li><a href="project.php">Projects</a></li>
-<!--         <li><a href="book.php">Library Books</a></li> -->
       </ul>
     </div>
   </div>

@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <!-- Goals: homepage and the rest of the pages
+<<<<<<< HEAD
 Maybes: Set up admin pages and get general dashboard 
 
 Thiem's todo list
