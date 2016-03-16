@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-
 //Scroll to top function
 	// hide #back-top first
 	$("#back-top").hide();
@@ -25,19 +23,28 @@ $(document).ready(function() {
 	});
 	//End of top scroll function
 	//Scroll navigation function to make the nav fixed at top
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {switchNav()};
 
-function myFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+function switchNav() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     	$("#my-navbar").addClass("navbar-fixed-top");
+    	$("#my-navbar").addClass("nav-centered");
     	$("#my-navbar").removeClass("navbar-static-top");
     	$("#miniLogo").css("display", "inherit");
+    	$("div.jumbotron").css('display','none');
+
     } else {
         $("#my-navbar").addClass("navbar-static-top");
+        $("#my-navbar").removeClass("nav-centered");
         $("#my-navbar").removeClass("navbar-fixed-top");
         $("#miniLogo").css("display", "none");
+        $("div.jumbotron").css('display','block');
     }
 }
+// $('#navbar-toggler').click(function(){
+// 	$("#my-navbar").removeClass("nav-centered");
+// });
+
 //End of document ready function
 });
 

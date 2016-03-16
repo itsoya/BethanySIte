@@ -1,14 +1,15 @@
 /*main*/
 .donate-bkgd{
-	background-image: url("../img/placeholders/placeholder-image6.jpg");
+	background-image: url("../img/facility/image_2.jpg");
 	background-repeat:no-repeat;
-	background-position:right bottom;
+	background-position:center center;
 	background-size:cover;
 	height:auto;
 	padding:30px;
 }
 .donate-title{
 	color:white;
+	text-shadow:0px 0px 10px black;
 	padding:30px;
 	font-size:5.5em;
 	font-weight:bold;
@@ -18,8 +19,14 @@
 	color:white;
 	z-index:5;
 	padding:30px;
-	background: transparent url("../img/black50-bg.png") repeat;
+	background: transparent url("../img/black75-bg.png") repeat;
 	border-radius:30px;
+	text-align:center;
+}
+.donate-p{
+	text-align:left;
+}
+.donate-btn{
 }
 /*end main*/
 
