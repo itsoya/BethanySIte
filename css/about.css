@@ -4,3 +4,10 @@
 .about-col-custom{
 	height:100%;
 }
+div.mission-content{
+	background-color: #A3BFE4;
+	padding: 30px;
+}
+img.bethany-img{
+	border-radius:30px;
+}

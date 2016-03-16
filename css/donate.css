@@ -1,0 +1,27 @@
+/*main*/
+.donate-bkgd{
+	background-image: url("../img/placeholders/placeholder-image6.jpg");
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	background-size:cover;
+	height:auto;
+	padding:30px;
+}
+.donate-title{
+	color:white;
+	padding:30px;
+	font-size:5.5em;
+	font-weight:bold;
+	text-align:center;
+}
+.overlay-content{
+	color:white;
+	z-index:5;
+	padding:30px;
+	background: transparent url("../img/black50-bg.png") repeat;
+	border-radius:30px;
+}
+/*end main*/
+
+/*media queries*/
+/*end media queries*/
