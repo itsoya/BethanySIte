@@ -32,6 +32,7 @@ function switchNav() {
     	$("#my-navbar").removeClass("navbar-static-top");
     	$("#miniLogo").css("display", "inherit");
     	$("div.jumbotron").css('display','none');
+
     } else {
         $("#my-navbar").addClass("navbar-static-top");
         $("#my-navbar").removeClass("nav-centered");
