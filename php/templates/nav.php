@@ -13,7 +13,7 @@
   <div>
     <div class="navbar-header">
       <!--Navigation button-->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+      <button id="nav-toggle-btn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -27,9 +27,8 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="about.php">About Us</a></li>
         <li><a href="donate.php">Donate</a></li>
-        <li><a href="project.php">Current Projects</a></li>
-        <li><a href="blog.php">Updated Posts</a></li>
-        <li><a href="book.php">Library Books</a></li>
+        <li><a href="project.php">Projects</a></li>
+<!--         <li><a href="book.php">Library Books</a></li> -->
       </ul>
     </div>
   </div>

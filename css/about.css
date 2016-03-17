@@ -1,6 +1,12 @@
-.about-row-custom{
-	height:500px;
+div.mission-content{
+	padding: 30px;
 }
-.about-col-custom{
-	height:100%;
+img.bethany-img{
+	padding-right:30px;
+	border-radius:30px;
+	padding:20px;
+}
+.row-colored{
+	background-color: rgba(163, 191, 228, 0.41);
+	padding:30px;
 }
