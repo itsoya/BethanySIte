@@ -1,3 +1,7 @@
+<?php
+    require "php/check_login.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,6 +61,7 @@
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
                                 <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+                                <a href="../../index.php" class="btn btn-lg btn-success btn-block">Back to Site</a>
                             </fieldset>
                         </form>
                     </div>

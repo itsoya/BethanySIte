@@ -143,6 +143,7 @@ Thiem's todo list
 						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
 							70/100
 						</div>
+<<<<<<< HEAD
 					</div>
 				</div>
 			</div> <!-- end row -->
@@ -158,3 +159,58 @@ Thiem's todo list
 		<script src="js/index.js" type="text/javascript"></script>
 	</body>
 </html>
+=======
+						</div> <!-- end row -->
+						<div class="row">
+							<h1>Statistics</h1>
+							<div class="col-md-4">
+								<span class="glyphicon glyphicon-globe glyph-custom" aria-hidden="true"></span>
+								<h2>Visitors 2016</h2>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+										70/100
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<span class="glyphicon glyphicon-piggy-bank glyph-custom" aria-hidden="true"></span>
+								<h2>Donations 2016</h2>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success" style="width:35%">
+										<span class="sr-only">35%</span>
+									</div>
+									<div class="progress-bar progress-bar-warning" style="width:25%">
+										<span class="sr-only">25%</span>
+									</div>
+									<div class="progress-bar progress-bar-danger" style="width:15%">
+										<span class="sr-only">15%</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<span class="glyphicon glyphicon-apple glyph-custom" aria-hidden="true"></span>
+								<h2>Children Helped 2016</h2>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+										70/100
+									</div>
+								</div>
+							</div>
+							</div> <!-- end row -->
+							<div class="row">
+								<h1>Our Mission</h1>
+								<div class="col-md-3">
+									<img src="img/facility/Image_11.jpg" class="fac-img" alt="BNF facility image">
+								</div>
+								<div class="col-md-9">
+									<p>Katana jeans sensory human augmented reality refrigerator San Francisco denim. Tattoo augmented reality corrupted hotdog geodesic tiger-team shrine sub-orbital RAF rifle. Uplink Tokyo-space monofilament receding tube sensory faded. Girl digital math-voodoo god nodality decay ablative monofilament film cardboard bicycle gang San Francisco sign bridge grenade. Digital cyber-faded decay wonton soup Chiba into receding artisanal sub-orbital. Tattoo augmented reality corrupted hotdog geodesic tiger-team shrine sub-orbital RAF rifle. Uplink Tokyo-space monofilament receding tube sensory faded. Girl digital math-voodoo god nodality decay ablative monofilament film cardboard bicycle gang San Francisco sign bridge grenade. Digital cyber-faded decay wonton soup Chiba into receding artisanal sub-orbitalKatana jeans sensory human augmented reality refrigerator San Francisco denim. Tattoo augmented reality corrupted hotdog geodesic tiger-team shrine sub-orbital RAF rifle. Uplink Tokyo-space monofilament receding tube sensory faded. Girl digital math-voodoo god nodality decay ablative monofilament film cardboard bicycle gang San Francisco sign bridge grenade. Digital cyber-faded decay wonton soup Chiba into receding artisanal sub-orbital. Tattoo augmented reality corrupted hotdog geodesic tiger-team shrine sub-orbital RAF rifle. Uplink Tokyo-space monofilament receding tube sensory faded. Girl digital math-voodoo god nodality decay ablative monofilament film cardboard bicycle gang San Francisco sign bridge grenade. Digital cyber-faded decay wonton soup Chiba into receding artisanal sub-orbital</p>
+								</div>
+								</div> <!-- end row -->
+							</div>
+							<!--End of container fluid & main-wrapper-->
+							<a href="admin/pages/index.php">ADMIN</a>
+							<?php require 'php/templates/footer.php';?>
+							<?php require 'php/templates/footing.php';?>
+						</body>
+					</html>
+>>>>>>> master
