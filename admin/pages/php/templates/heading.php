@@ -4,7 +4,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <!-- Bootstrap Core CSS -->
-<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 <!-- MetisMenu CSS -->
 <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 <!-- Timeline CSS -->
@@ -14,7 +14,7 @@
 <!-- Morris Charts CSS -->
 <link href="../bower_components/morrisjs/morris.css" rel="stylesheet">
 <!-- Custom Fonts -->
-<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="../bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
