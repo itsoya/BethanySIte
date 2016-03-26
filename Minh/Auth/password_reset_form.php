@@ -44,27 +44,35 @@
                 $("#password_form").hide();
                 alert("Please request a new password reset.");
             }
-            
-            $("#submit").click(function(){
-                if($("#password").val() == $("#confirm_password").val() && $("#password").val().length >= 5){
+
+            $("#b_submit").click(function(){
+                var password = $("#t_password").val();
+                var password_confirmed = $("#t_password_confirm").val();
+
+                if(password != password_confirmed)
+                    alert("Your passwords do not match.");
+
+                else if(password.length < 5)
+                    alert("Your password is not long enough.");
+
+                else if((password == password_confirmed) && (password.length >= 5)){
                     $.ajax({
                         method : "POST",
                         url : "password_reset.php",
-                        data : {"token" : token, "email" : email, "password" : $("#password").val()},
+                        data : {"token" : token, "email" : email, "password" : password},
                         success : (function (returnData) {
-                            if(returnData == "1")
-                                window.location.replace("http://bethanynegashfoundation.org/");
+                            //alert(returnData);
+
+                            if(returnData == "updated password"){
+                                alert("Your password has been changed.");
+                                window.location.replace("http://bethanynegashfoundation.org/admin/pages/login.php");
+                            }
                             else {
                                 alert("Update fail");
                             }
+
                         })
                     });
-                }
-                else if($("#password").val().length < 5){
-                    alert("Your password is not long enough.");
-                }
-                else if($("#password").val() == $("#confirm_password").val()){
-                    alert("Your passwords do not match.");
                 }
             });
         });
@@ -75,14 +83,14 @@
             <table>
                 <tr>
                     <td>New Password</td>
-                    <td><input type="password" id="password" id="password"></input></td>
+                    <td><input type="password" id="t_password"></input></td>
                 </tr>
                 <tr>
                     <td>Confirm Password</td>
-                    <td><input type="password" id="password_confirm" id="confirm_password"></input></td>
+                    <td><input type="password" id="t_password_confirm"></input></td>
                 </tr>
             </table>
-            <input type="submit" value="Update Password" id="submit"></input>
+            <input type="button" value="Update Password" id="b_submit"></input>
         </div>
     </body>
 </html>

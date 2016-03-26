@@ -24,7 +24,7 @@
                           VALUES('$email', '$token', $timeInSeconds);";
     mysqli_query($db, $sql);
 
-    SendEmail("http://bethanynegashfoundation.org/Minh/Login/password_reset_form.php?token=$token&email=$email");
+    SendEmail("http://bethanynegashfoundation.org/Minh/Auth/password_reset_form.php?token=$token&email=$email");
 
     function SendEmail($hyperLink){
         // multiple recipients

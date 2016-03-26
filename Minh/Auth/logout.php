@@ -1,6 +1,9 @@
 <?php
-    setcookie("email", "", time() - 10000000);
-    setcookie("first_name", "", time() - 10000000);
-    setcookie("last_name", "", time() - 10000000);
-    setcookie("token", "", time() - 10000000);
+    $time = time() - 1000000;
+    setcookie("email", "", $time, "/");
+    setcookie("first_name", "", $time, "/");
+    setcookie("last_name", "", $time, "/");
+    setcookie("token", "", $time, "/");
+
+    header("Location: http://bethanynegashfoundation.org/admin/pages/login.php");
  ?>
