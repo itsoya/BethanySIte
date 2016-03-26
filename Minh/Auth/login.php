@@ -17,7 +17,7 @@
     ============================================================================*/
     function Login($email, $password, $db){
         require_once("lib/password.php");
-        $sql = "SELECT login_id, password, first_name, last_name FROM login_t WHERE email = '$email';";
+        $sql = "SELECT password, first_name, last_name, is_admin FROM login_t WHERE email = '$email';";
         $result = mysqli_query($db, $sql);
 
         // email does exist, check to see if the password is correct
@@ -25,7 +25,8 @@
             // Check if the hashed password stored in the db is the same as the input password
             $row = mysqli_fetch_assoc($result);
             $isSuccess = (password_verify($password, $row["password"]) == '1') ? "success" : "fail";
-            if($isSuccess == "success"){
+            $isAdmin = $row["is_admin"];
+            if($isSuccess == "success" && $isAdmin == "1"){
                 $id = $row['login_id'];
                 $firstName = $row['first_name'];
                 $lastName = $row['last_name'];
@@ -42,14 +43,16 @@
                 mysqli_query($db, $sql_token);
                 echo 1; // Send back if the login was successful or unsuccessful
             }
+            elseif($isAdmin == "0")
+                echo "Account is not admin";
             // If email does exist but password doesn't match
             else{
-                echo 0;
+                echo "email or password is incorrect";
             }
         }
         // email doesn't exist in database
         else {
-            echo 0;
+            echo "email or password is incorrect";
         }
         $db->close();
     }
