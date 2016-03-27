@@ -21,21 +21,29 @@
 					<h2>How you can help</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est mi, iaculis fringilla mi interdum, sodales faucibus ex. Aliquam eros eros, venenatis sit amet molestie nec, ultrices sed arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut non urna neque. Maecenas blandit leo ut risus lobortis euismod. Integer porttitor ante justo, vel ornare urna viverra eu. Nunc hendrerit auctor urna, quis tempus ante posuere non.Quisque faucibus vel elit sed eleifend. Aenean ornare mauris quis dolor dictum tempus. Nam vestibulum nisi ut felis porta fermentum. Ut convallis ullamcorper mauris, id laoreet neque luctus quis. Sed feugiat, sapien ut viverra viverra, enim tortor ultricies tortor, eget dapibus velit tellus vel nibh. Aliquam in dignissim sapien. Nullam ac purus in lorem imperdiet ultricies. Sed vitae mi elit. Vivamus libero felis, scelerisque a lobortis quis, faucibus et tortor. Sed eu velit pretium, pharetra est viverra, aliquet felis. Etiam ullamcorper mattis luctus.</p>
 					<br>
-					<br>
-					<br>
 					<hr>
 					<div class="about-contact">
 						<h2>
 							Contact Us:
 						</h2>
-						<p>
-							Phone:
-							<br>
-							Email:
-							<br>
-							P.O. Box:
-						</p>
-					</div>
+
+						<form role="form">
+							<div class="form-group">
+								<label for="name">Name:</label>
+								<input type="name" class="form-control" id="name">
+							</div>
+							<div class="form-group">
+								<label for="email">Email:</label>
+								<input type="email" class="form-control" id="email">
+							</div>
+							<div class="form-group">
+								<label for="comments">Comments (max 255 words)</label>
+								<textarea class="form-control" rows="4" id="comment" maxlength="255"></textarea>
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+
+					</div> <!-- end about-contact -->
 				</div> <!-- end row -->
 			</div> <!-- end row -->
 		</div><!--End main-wrapper-->
