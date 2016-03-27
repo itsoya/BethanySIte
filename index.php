@@ -113,8 +113,8 @@ Thiem's todo list
 			<div class="row">
 				<h1>Statistics</h1>
 				<div class="col-md-4">
-					<span class="glyphicon glyphicon-globe glyph-custom" aria-hidden="true"></span>
-					<h2>Visitors 2016</h2>
+					<span class="glyphicon glyphicon-globe glyph-custom" aria-hidden="true" data-target="#myModal" data-toggle="modal"></span>
+					<h2>Website Visitors 2016</h2>
 					<div class="progress">
 						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
 							70/100
@@ -122,34 +122,82 @@ Thiem's todo list
 					</div> <!-- end progress -->
 				</div> <!-- end col -->
 				<div class="col-md-4">
-					<span class="glyphicon glyphicon-piggy-bank glyph-custom" aria-hidden="true"></span>
-					<h2>Donations 2016</h2>
+					<span class="glyphicon glyphicon-piggy-bank glyph-custom" aria-hidden="true" data-target="#myModal" data-toggle="modal"></span>
+					<h2>Money Donations 2016</h2>
 					<div class="progress">
-						<div class="progress-bar progress-bar-success" style="width:35%">
-							<span class="sr-only">35%</span>
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+							$70/100
 						</div>
-						<div class="progress-bar progress-bar-warning" style="width:25%">
-							<span class="sr-only">25%</span>
-						</div>
-						<div class="progress-bar progress-bar-danger" style="width:15%">
-							<span class="sr-only">15%</span>
-						</div>
-					</div>
+					</div> <!-- end progress -->
 				</div>
 				<div class="col-md-4">
-					<span class="glyphicon glyphicon-apple glyph-custom" aria-hidden="true"></span>
-					<h2>Children Helped 2016</h2>
+					<span class="glyphicon glyphicon-apple glyph-custom" aria-hidden="true" data-target="#myModal" data-toggle="modal"></span>
+					<h2>Visitors to facility 2016</h2>
 					<div class="progress">
 						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
 							70/100
 						</div>
-<<<<<<< HEAD
 					</div>
 				</div>
 			</div> <!-- end row -->
 
-			<div class="custom-modal-overlay">
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
 
+				<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Stats</h4>
+						</div>
+						<div class="modal-body">
+							<div>
+
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active"><a href="#stat-visitors-web" aria-controls="stat-visitors-web" role="tab" data-toggle="tab">Website Visitors</a></li>
+									<li role="presentation"><a href="#stat-donations" aria-controls="stat-donations" role="tab" data-toggle="tab">Money Donations</a></li>
+									<li role="presentation"><a href="#stat-visitors-facility" aria-controls="stat-visitors-facility" role="tab" data-toggle="tab">Facility Visitors</a></li>
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane fade in active" id="stat-visitors-web">
+										<h2>This year: 70</h2>
+										<br>
+										<h2>Total Overall: 1,345</h2>
+										<br>
+
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="stat-donations">
+										<h2>This year</h2>
+										<div class="progress">
+											<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+												$70/100
+											</div>
+										</div> <!-- end progress -->
+										<br>
+										<h2>Total Overall: $1200</h2>
+										<br>
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="stat-visitors-facility">
+										<h2>This year: 70</h2>
+										<br>
+										<h2>Total Overall: 134</h2>
+										<br>
+									</div>
+								</div>
+
+							</div>
+						</div> <!-- end modal-body -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
 			</div>
 
 		</div> <!-- end main-wrapper -->
@@ -159,58 +207,3 @@ Thiem's todo list
 		<script src="js/index.js" type="text/javascript"></script>
 	</body>
 </html>
-=======
-						</div> <!-- end row -->
-						<div class="row">
-							<h1>Statistics</h1>
-							<div class="col-md-4">
-								<span class="glyphicon glyphicon-globe glyph-custom" aria-hidden="true"></span>
-								<h2>Visitors 2016</h2>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
-										70/100
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<span class="glyphicon glyphicon-piggy-bank glyph-custom" aria-hidden="true"></span>
-								<h2>Donations 2016</h2>
-								<div class="progress">
-									<div class="progress-bar progress-bar-success" style="width:35%">
-										<span class="sr-only">35%</span>
-									</div>
-									<div class="progress-bar progress-bar-warning" style="width:25%">
-										<span class="sr-only">25%</span>
-									</div>
-									<div class="progress-bar progress-bar-danger" style="width:15%">
-										<span class="sr-only">15%</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<span class="glyphicon glyphicon-apple glyph-custom" aria-hidden="true"></span>
-								<h2>Children Helped 2016</h2>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
-										70/100
-									</div>
-								</div>
-							</div>
-							</div> <!-- end row -->
-							<div class="row">
-								<h1>Our Mission</h1>
-								<div class="col-md-3">
-									<img src="img/facility/Image_11.jpg" class="fac-img" alt="BNF facility image">
-								</div>
-								<div class="col-md-9">
-									<p>Katana jeans sensory human augmented reality refrigerator San Francisco denim. Tattoo augmented reality corrupted hotdog geodesic tiger-team shrine sub-orbital RAF rifle. Uplink Tokyo-space monofilament receding tube sensory faded. Girl digital math-voodoo god nodality decay ablative monofilament film cardboard bicycle gang San Francisco sign bridge grenade. Digital cyber-faded decay wonton soup Chiba into receding artisanal sub-orbital. Tattoo augmented reality corrupted hotdog geodesic tiger-team shrine sub-orbital RAF rifle. Uplink Tokyo-space monofilament receding tube sensory faded. Girl digital math-voodoo god nodality decay ablative monofilament film cardboard bicycle gang San Francisco sign bridge grenade. Digital cyber-faded decay wonton soup Chiba into receding artisanal sub-orbitalKatana jeans sensory human augmented reality refrigerator San Francisco denim. Tattoo augmented reality corrupted hotdog geodesic tiger-team shrine sub-orbital RAF rifle. Uplink Tokyo-space monofilament receding tube sensory faded. Girl digital math-voodoo god nodality decay ablative monofilament film cardboard bicycle gang San Francisco sign bridge grenade. Digital cyber-faded decay wonton soup Chiba into receding artisanal sub-orbital. Tattoo augmented reality corrupted hotdog geodesic tiger-team shrine sub-orbital RAF rifle. Uplink Tokyo-space monofilament receding tube sensory faded. Girl digital math-voodoo god nodality decay ablative monofilament film cardboard bicycle gang San Francisco sign bridge grenade. Digital cyber-faded decay wonton soup Chiba into receding artisanal sub-orbital</p>
-								</div>
-								</div> <!-- end row -->
-							</div>
-							<!--End of container fluid & main-wrapper-->
-							<a href="admin/pages/index.php">ADMIN</a>
-							<?php require 'php/templates/footer.php';?>
-							<?php require 'php/templates/footing.php';?>
-						</body>
-					</html>
->>>>>>> master
