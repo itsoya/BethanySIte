@@ -9,13 +9,6 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-.nav {
-  float: right;
-}
-.btn-default {
-  float: left;
-  clear: both;
-}
 body {
   margin: 0;
 }
@@ -2638,8 +2631,7 @@ input[type="search"] {
   }
 }
 .form-group {
-  margin: 20px;
-  float: left;
+  margin-bottom: 15px;
 }
 .radio,
 .checkbox {
@@ -5695,9 +5687,6 @@ button.list-group-item-danger.active:focus {
 }
 .panel-default {
   border-color: #ddd;
-  margin-top: 30px;
-  float: left;
-  width: 100%;
 }
 .panel-default > .panel-heading {
   color: #333;
