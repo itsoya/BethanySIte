@@ -26,30 +26,27 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type = "text/javascript">
         $(function(){
-            $("#b_login").click(function(){
-                if(($("#t_login_email").val() != "") &&
-                    ($("#t_login_password").val() != ""))
-                {
-                    Login($("#t_login_email").val(), $("#t_login_password").val());
-                }
-                else {
-                    alert("Try again.");
-                }
+            $("#b_forgot_email").click(function(){
+                var email = $("#t_forgot_email").val();
+                Forget_Email(email);
             });
         });
 
-        function Login(email, password){
-            //alert(email + password);
+        function Forget_Email(email){
             $.ajax({
                 method : "POST",
-                url : "../../Minh/Auth/login.php",
-                data : {"email" : email, "password" : password},
+                url : "../../Minh/Auth/forgot_password.php",
+                data : {"email" : email},
                 success : (function (returnData) {
-                    if(returnData == "success")
-                        window.location.replace("http://bethanynegashfoundation.org/admin/pages/index.php");
-                    else {
-                        alert("Email or Password is incorrect.");
+                    /*
+                    if(returnData == "success") {
+                        alert("An password reset email has been sent.");
                     }
+                    else {
+                        alert("Email does not exists.");
+                    }
+                    */
+                    alert(returnData);
                 })
             });
         }
@@ -70,27 +67,18 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Please Sign In</h3>
+                        <h3 class="panel-title">Sign Up</h3>
                     </div>
                     <div class="panel-body">
                         <form role="form">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus id="t_login_email"></input>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" id="t_login_password"></input>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me</input>
-                                    </label>
+                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus id="t_forgot_email"></input>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <input type="button" class="btn btn-lg btn-success btn-block" value="Login" id="b_login"></input>
+                                <input type="button" class="btn btn-lg btn-success btn-block" value="Forgot Email" id="b_forgot_email"></input>
+                                <a href="login.php" class="btn btn-lg btn-success btn-block">Log In</a>
                                 <a href="../../index.php" class="btn btn-lg btn-success btn-block">Back to Site</a>
-                                <a href="sign_up.php" class="btn btn-lg btn-success btn-block">Sign Up</a>
-                                <a href="forgot_password.php" class="btn btn-lg btn-success btn-block">Forgot Password</a>
                             </fieldset>
                         </form>
                     </div>

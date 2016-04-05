@@ -23,6 +23,7 @@ require "php/check_login.php";
                             <div class="form-group">
                                 <label>Last Name</label>
                                 <input class="form-control" name="lName"placeholder="Last Name">
+                                <p class="help-block">* Required</p>
                             </div>
                             <div class="form-group">
                                 <label>Date</label>
@@ -31,7 +32,7 @@ require "php/check_login.php";
                             </div>
                             <div class="form-group">
                                 <label>Amount ($)</label>
-                                <input type="number" name="amount" value="0" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" />
+                                <input type="number" name="amount" value="1000" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" />
                                 <p class="help-block">* Required</p>
                             </div>
                             <div class="form-group">
@@ -57,12 +58,12 @@ require "php/check_login.php";
                                     <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                         <thead>
                                             <tr>
-                                                <th style="width:10%;">First Name</th>
-                                                <th style="width:10%;">Last Name</th>
-                                                <th style="width:6%;">Date</th>
-                                                <th style="width:6%;">Amount</th>
-                                                <th style="width:20%;">Address</th>
-                                                <th style="width:18%;">Email</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Date</th>
+                                                <th>Amount</th>
+                                                <th>Address</th>
+                                                <th>Email</th>
                                             </tr>
                                         </thead>
                                         <tbody>

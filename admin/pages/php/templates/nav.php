@@ -14,7 +14,7 @@
             <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
         </li>
         <li class="divider"></li>
-        <li><a href="login.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+        <li><a href="../../../Minh/Auth/logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
         <li><a href="../../index.php"><i class="fa fa-sign-out fa-fw"></i> Back to Site</a>
     </li>
 </ul>
