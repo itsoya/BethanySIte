@@ -19,7 +19,7 @@ Thiem's todo list
 			<div class="row">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
+					<div class="carousel-inner load-carousel-here" role="listbox">
 						<div class="item active item-container">
 							<div class="col-xs-4">
 								<img src="img/facility/image_10_this.jpg" alt="BNF kids" class="img-responsive">
@@ -70,45 +70,49 @@ Thiem's todo list
 				</div>
 			</div> <!-- end row -->
 			<hr>
-			<div class="row">
+			<div class="row load-projects-here">
 				<h1>Latest Projects</h1>
 				<div class="col-lg-4 col-xs-12">
-					<div class="box-panel">
+					<div class="project-panel">
 						<a href="#">
-							<div>
-								<h3>Books for Kids</h3>
-								<p>Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
-								<br>
-								<span class="box-author">Written by: [Name]</span>
-							</div>
+							<div class="bkgd-color">
+								<img src="img/facility/image_1.jpg" class="project-left" alt="Bethany Facility Image">
+								<div class="project-right">
+									<h3 class="project-title">Books for Kids</h3><span class="project-author">Written by: [Name]</span>
+									<p class="project-content">Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
+								</div> <!-- end project-right -->
+							</div> <!-- end bkgd-color -->
 						</a>
-					</div> <!-- end box-panel -->
+					</div> <!-- end project-panel -->
 				</div> <!-- end col -->
 				<div class="col-lg-4 col-xs-12">
-					<div class="box-panel">
+					<div class="project-panel">
 						<a href="#">
-							<div>
-								<h3>Empowering the Youth</h3>
-								<p>Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
-								<br>
-								<span class="box-author">Written by: [Name]</span>
-							</div>
+							<div class="bkgd-color">
+								<img src="img/facility/image_1.jpg" class="project-left" alt="Bethany Facility Image">
+								<div class="project-right">
+									<h3 class="project-title">Books for Kids</h3><span class="project-author">Written by: [Name]</span>
+									<p class="project-content">Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
+								</div> <!-- end project-right -->
+							</div> <!-- end bkgd-color -->
 						</a>
-					</div> <!-- end box-panel -->
+					</div> <!-- end project-panel -->
 				</div> <!-- end col -->
 				<div class="col-lg-4 col-xs-12">
-					<div class="box-panel">
+					<div class="project-panel">
 						<a href="#">
-							<div>
-								<h3>Computer Literacy</h3>
-								<p>Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
-								<br>
-								<span class="box-author">Written by: [Name]</span>
-							</div>
+							<div class="bkgd-color">
+								<img src="img/facility/image_1.jpg" class="project-left" alt="Bethany Facility Image">
+								<div class="project-right">
+									<h3 class="project-title">Books for Kids</h3><span class="project-author">Written by: [Name]</span>
+									<p class="project-content">Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.</p>
+								</div> <!-- end project-right -->
+							</div> <!-- end bkgd-color -->
 						</a>
-					</div> <!-- end box-panel -->
+					</div> <!-- end project-panel -->
 				</div> <!-- end col -->
 			</div> <!-- end row -->
+
 			<hr>
 			<div class="row">
 				<h1>Statistics</h1>

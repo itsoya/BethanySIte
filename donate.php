@@ -8,20 +8,20 @@
 		<?php require 'php/templates/nav.php';?>
 		<body data-spy="scroll" data-target="#my-navbar">
 			<div id="main-wrapper" class="container">
-				<div class="row">
+				<div class="row load-json-here">
 					<div class="col-md-12 row donate-bkgd">
 						<div class="col-md-6">
-							<h1 class="donate-title">
-								Help Us <br> Change Lives
+							<h1 class="catch-phrase">
+								Catch <br> Phrase
 							</h1>
 						</div>
 				        <div class="col-md-6 overlay-content">
-							<h3>How we use the money</h3>
+							<h3 class="headline">Headline</h3>
 							<p class="donate-p">
 								<br>
-								Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.
+								Paragraph of content
 							</p>
-							<h3></h3>
+
 							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 					            <input type="hidden" name="cmd" value="_donations">
 					            <input type="hidden" name="business" value="minhdi11@gmail.com">
@@ -34,11 +34,9 @@
 					            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 					        </form>
 
-    						<div class="overlay">
-				        	</div> <!-- end overlay row -->
 				        </div> <!-- end overlay content -->
-					</div>
-				</div>
+					</div> <!-- end donate-bkgd -->
+				</div> <!-- end row, load-json-here -->
 			</div>
 			<!--End of container fluid-->
 			<!--Top of page-->
@@ -48,5 +46,6 @@
 			<!--end of top of page-->
 			<?php require 'php/templates/footer.php';?>
 			<?php require 'php/templates/footing.php';?>
+			<script src="js/donate.js"></script>
 		</body>
 	</html>
