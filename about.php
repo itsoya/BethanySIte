@@ -24,18 +24,18 @@
 					<div class="about-contact">
 						<h2>Contact Us:</h2>
 
-						<form role="form">
+						<form role="form" action="comment.php" method="get">
 							<div class="form-group">
 								<label for="name">Name:</label>
-								<input type="name" class="form-control" id="name">
+								<input type="name" class="form-control" id="name" name="name">
 							</div>
 							<div class="form-group">
 								<label for="email">Email:</label>
-								<input type="email" class="form-control" id="email">
+								<input type="email" class="form-control" id="email" name="email">
 							</div>
 							<div class="form-group">
 								<label for="comments">Comments (max 255 words)</label>
-								<textarea class="form-control" rows="4" id="comment" maxlength="255"></textarea>
+								<textarea class="form-control" rows="4" id="comment" maxlength="255" name="comments-area"></textarea>
 							</div>
 							<button type="submit" class="btn btn-default">Submit</button>
 						</form>

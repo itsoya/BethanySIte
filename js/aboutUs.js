@@ -26,18 +26,18 @@ $(document).ready(function(){
 			innerHTML+='<hr>';
 			innerHTML+='<div class="about-contact">';
 				innerHTML+='<h2>Contact Us:</h2>'
-				innerHTML+='<form role="form">';
+				innerHTML+='<form role="form" action="comment.php" method="get">';
 					innerHTML+='<div class="form-group">';
 						innerHTML+='<label for="name">Name:</label>';
-						innerHTML+='<input type="name" class="form-control" id="name">';
+						innerHTML+='<input type="name" class="form-control" id="name" name="name">';
 					innerHTML+='</div>';
 					innerHTML+='<div class="form-group">';
 						innerHTML+='<label for="email">Email:</label>';
-						innerHTML+='<input type="email" class="form-control" id="email">';
+						innerHTML+='<input type="email" class="form-control" id="email" name="email">';
 					innerHTML+='</div>';
 					innerHTML+='<div class="form-group">';
 						innerHTML+='<label for="comments">Comments (max 255 words)</label>';
-						innerHTML+='<textarea class="form-control" rows="4" id="comment" maxlength="255"></textarea>';
+						innerHTML+='<textarea class="form-control" rows="4" id="comment" maxlength="255" name="comments-area"></textarea>';
 					innerHTML+='</div>';
 					innerHTML+='<button type="submit" class="btn btn-default">Submit</button>';
 				innerHTML+='</form>';
