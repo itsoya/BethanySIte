@@ -26,11 +26,22 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type = "text/javascript">
         $(function(){
-            $("#b_login").click(function(){
-                if(($("#t_login_email").val() != "") &&
-                    ($("#t_login_password").val() != ""))
+            $("#b_sign_up").click(function(){
+                var email = $("#t_login_email").val();
+                var password = $("#t_login_password").val();
+                var password_confirm = $("#t_login_password_confirm").val();
+                var firstName = $("#t_first_name").val();
+                var lastName = $("#t_last_name").val();
+
+                if(email != "" && password != "" && password_confirm != "")
                 {
-                    Login($("#t_login_email").val(), $("#t_login_password").val());
+                    if(password != password_confirm)
+                        alert("Passwords do not match");
+                    else if (password.length < 5) {
+                        alert("Password isn't long enough, 5 or more characters.")
+                    }
+                    else
+                        SignUp(email, password, firstName, lastName);
                 }
                 else {
                     alert("Try again.");
@@ -38,17 +49,18 @@
             });
         });
 
-        function Login(email, password){
-            //alert(email + password);
+        function SignUp(email, password, firstName, lastName){
             $.ajax({
                 method : "POST",
-                url : "../../Minh/Auth/login.php",
-                data : {"email" : email, "password" : password},
+                url : "../../Minh/Auth/signup.php",
+                data : {"email" : email, "password" : password, "firstName" : firstName, "lastName" : lastName},
                 success : (function (returnData) {
-                    if(returnData == "success")
-                        window.location.replace("http://bethanynegashfoundation.org/admin/pages/index.php");
+                    if(returnData == "success") {
+                        alert("Sign up was successful.");
+                        window.location.replace("http://bethanynegashfoundation.org/admin/pages/login.php");
+                    }
                     else {
-                        alert("Email or Password is incorrect.");
+                        alert("Email already exists.");
                     }
                 })
             });
@@ -70,7 +82,7 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Please Sign In</h3>
+                        <h3 class="panel-title">Sign Up</h3>
                     </div>
                     <div class="panel-body">
                         <form role="form">
@@ -81,16 +93,18 @@
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Password" name="password" type="password" id="t_login_password"></input>
                                 </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me</input>
-                                    </label>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" id="t_login_password_confirm"></input>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="First Name" name="firstName" type="text" autofocus id="t_first_name"></input>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Last Name" name="lastName" type="text" autofocus id="t_last_name"></input>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <input type="button" class="btn btn-lg btn-success btn-block" value="Login" id="b_login"></input>
+                                <input type="button" class="btn btn-lg btn-success btn-block" value="Sign Up" id="b_sign_up"></input>
                                 <a href="../../index.php" class="btn btn-lg btn-success btn-block">Back to Site</a>
-                                <a href="sign_up.php" class="btn btn-lg btn-success btn-block">Sign Up</a>
-                                <a href="forgot_password.php" class="btn btn-lg btn-success btn-block">Forgot Password</a>
                             </fieldset>
                         </form>
                     </div>

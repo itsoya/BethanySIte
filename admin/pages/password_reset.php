@@ -1,3 +1,36 @@
+<?php
+    $token = $_GET["token"];
+    $email = "";
+    $is_expired = "false";
+
+    $db = new mysqli("localhost", "solomonnegash", "negash2016", "bethany_negash_foundation");   // use this for Live Server
+    //$db = new mysqli("localhost", "root", "", "bethany_negash_foundation");      // Use this for Local Server
+    if(!$db){
+        echo 0;
+    }
+
+    else{
+        if($token != ""){
+            $sql = "SELECT email, is_used FROM forgot_password_t WHERE token = '$token'";
+            $result = mysqli_query($db, $sql);
+
+            if (mysqli_num_rows($result) > 0) {
+                $row = mysqli_fetch_assoc($result);
+
+                // Check to see if the password reset is valid
+                if($row["is_used"] == 1){
+                    // Alert the user to request another password reset
+                    $is_expired = "true";
+                }
+                else {
+                    $email = $row["email"];
+                }
+            }
+        }
+    }
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,31 +58,48 @@
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type = "text/javascript">
-        $(function(){
-            $("#b_login").click(function(){
-                if(($("#t_login_email").val() != "") &&
-                    ($("#t_login_password").val() != ""))
-                {
-                    Login($("#t_login_email").val(), $("#t_login_password").val());
+        var is_expired = "<?php echo $is_expired; ?>";
+        var email = "<?php echo $email; ?>";
+        var token = "<?php echo $token ?>";
+
+        $(function (){
+            if(is_expired == "true"){
+                $(".container").hide();
+                alert("Please request a new password reset.");
+            }
+            $("#password_reset_tittle").val() = "Password Reset for: " + email;
+
+            $("#b_password_reset").click(function(){
+                var password = $("#t_password").val();
+                var password_confirm = $("#t_password_confirm").val();
+                if(password.length >= 5){
+                    if(password == password_confirm)
+                        Forget_Email(password);
+                    else
+                        alert("Your passwords do not match.");
                 }
-                else {
-                    alert("Try again.");
-                }
+                else
+                    alert("Your password is not long enough");
+
             });
         });
 
-        function Login(email, password){
-            //alert(email + password);
+        function Forget_Email(password){
             $.ajax({
                 method : "POST",
-                url : "../../Minh/Auth/login.php",
-                data : {"email" : email, "password" : password},
+                url : "../../Minh/Auth/password_reset.php",
+                data : {"password" : password},
                 success : (function (returnData) {
-                    if(returnData == "success")
-                        window.location.replace("http://bethanynegashfoundation.org/admin/pages/index.php");
-                    else {
-                        alert("Email or Password is incorrect.");
+                    /*
+                    if(returnData == "success") {
+                        alert("Password reset was successful.");
+                        window.location.replace("http://bethanynegashfoundation.org/admin/pages/login.php");
                     }
+                    else {
+                        alert("Try again.");
+                    }
+                    */
+                    alert(returnData);
                 })
             });
         }
@@ -70,27 +120,20 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Please Sign In</h3>
+                        <h3 class="panel-title" id="password_reset_tittle">Reset Password</h3>
                     </div>
                     <div class="panel-body">
                         <form role="form">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus id="t_login_email"></input>
+                                    <input class="form-control" type="password" autofocus id="t_password"></input>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" id="t_login_password"></input>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me</input>
-                                    </label>
+                                    <input class="form-control" type="password" autofocus id="t_password_confirm"></input>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <input type="button" class="btn btn-lg btn-success btn-block" value="Login" id="b_login"></input>
+                                <input type="button" class="btn btn-lg btn-success btn-block" value="Forgot Email" id="b_password_reset"></input>
                                 <a href="../../index.php" class="btn btn-lg btn-success btn-block">Back to Site</a>
-                                <a href="sign_up.php" class="btn btn-lg btn-success btn-block">Sign Up</a>
-                                <a href="forgot_password.php" class="btn btn-lg btn-success btn-block">Forgot Password</a>
                             </fieldset>
                         </form>
                     </div>
