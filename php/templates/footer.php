@@ -14,8 +14,8 @@
 				<li> <a href="https://www.youtube.com/user/KennesawStatenow"><img src="img/icons/youtube_round.png" alt="Youtube"></a></li>
 				<li></li>
 			</ul>
-		</div> 
-		<a href="admin/pages/login.html">ADMIN LOGIN</a>
+		</div>
+		<a href="admin">ADMIN LOGIN</a>
 		<p>&copy;  2016 Bethany Negash Foundation. All Rights Reserved.</p>
 	</div>
 	<!-- end Container-->

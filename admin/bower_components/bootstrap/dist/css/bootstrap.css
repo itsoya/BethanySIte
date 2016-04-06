@@ -34,6 +34,7 @@ section,
 summary {
   display: block;
 }
+
 audio,
 canvas,
 progress,
@@ -2637,9 +2638,20 @@ input[type="search"] {
     line-height: 46px;
   }
 }
+.checkboxes li{
+    float: left;
+    padding: 12px 6px 4px 4%;
+    font-size: x-large;
+    list-style: none;
+}
+#usaForm {
+  display:hidden;
+  float:left;
+}
 .form-group {
   margin: 20px;
   float: left;
+  width: 210px;
 }
 .radio,
 .checkbox {
@@ -4338,6 +4350,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
+  font-weight: bold;
+
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4509,6 +4523,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-brand {
   color: #777;
+  font-size: xx-large;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -4519,12 +4534,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+    color: #000;
+    border: black 1px;
+    font-size: large;
+    transition: all .5s;
+    border-style: solid;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
-  background-color: transparent;
+    color: #FFF;
+    background-color: #000;
+    transition: all .5s;
+
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -4561,6 +4582,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777;
+    font-weight: bold;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
