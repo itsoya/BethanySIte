@@ -1,6 +1,54 @@
-.box-panel{
+/*General*/
+.main-wrapper{}
 
-}
-.box-author{
-	
-}
+/*Content*/
+    /*col-left*/
+        ul{
+            padding:0px;
+        }
+        .col-left {
+            line-height:30px;
+            background-color:#eeeeee;
+            width:25%;
+            float:left;
+            padding:5px;
+        }
+        .col-left li{
+            list-style:none;
+        }
+        .col-left a{
+            display:block;
+            text-decoration:none;
+            text-align:center;
+        }
+        .col-left a:hover{
+            background-color:rgb(150, 183, 226);
+            color:rgb(73, 104, 144);
+            transition:background-color 0.3s ease-in-out;
+        }
+        .active {
+            font-weight:bold;
+            background-color:rgba(173, 197, 228, 0.8);
+            color:white;
+            transition:background-color 0.3s ease-in-out;
+        }
+    /*end col-left*/
+
+    /*col-right*/
+        .tab-content {
+            width:75%;
+            float:left;
+            padding:10px;
+            text-align:center;
+        }
+        .tab-content img{
+            margin: 20px 0px;
+            padding:0px 40px;
+            width:900px;
+            height:400px;
+        }
+        .tab-content p{
+            text-align:left;
+            padding:0px 70px;
+        }
+    /*end col-right*/
