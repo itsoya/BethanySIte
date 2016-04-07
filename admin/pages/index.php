@@ -4,6 +4,9 @@
     <head>
         <title>Bethany Negash Admin - Moneya Donations</title>
         <?php require "php/templates/heading.php";?>
+        <!--
+        *ADD Related project tabs and entry
+         -->
     </head>
     <body>
         <div id="wrapper">
@@ -12,7 +15,7 @@
                 <div class="row">
                     <!--The form for donation input into the database-->
                     <div class="col-lg-12">
-                        <form role="form" action="/Minh/Donation/Paypal/set_paypal_donation.php" method="post">
+                        <form role="form" action="/Minh/Donation/set_donation.php" method="post">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h2>Money Donation Form</h2>
@@ -46,6 +49,10 @@
                                 </select>
                             </div>
                             <div class="form-group">
+                                <label>Project</label>
+                                <input class="form-control" type="project" name="project" value="N/A"placeholder="Related Projects">
+                            </div>
+                            <div class="form-group" style="float: left; clear: left;">
                                 <label>Country</label>
                                 <?php require "php/templates/countryForm.php";?>
                             </div>
@@ -80,6 +87,7 @@
                                     <li><input type="checkbox" name="email" checked>Email</li>
                                     <li><input type="checkbox" name="amount" checked>Amount</li>
                                     <li><input type="checkbox" name="type" checked>Type</li>
+                                    <li><input type="checkbox" name="project">Project</li>
                                     <li><input type="checkbox" name="country">Country</li>
                                     <li><input type="checkbox" name="address">Address</li>
                                     <li><input type="checkbox" name="city">City</li>
@@ -98,6 +106,7 @@
                                                 <th class="email">Email</th>
                                                 <th class="amount">Amount</th>
                                                 <th class="type">Type</th>
+                                                <th class="project">Project</th>
                                                 <th class="country">Country</th>
                                                 <th class="address">Address</th>
                                                 <th class="city">City</th>
@@ -112,6 +121,7 @@
                                                 <td class="email">s</td>
                                                 <td class="amount">4</td>
                                                 <td class="type">4</td>
+                                                <td class="project">d</td>
                                                 <td class="country">d</td>
                                                 <td class="address">X</td>
                                                 <td class="city">d</td>

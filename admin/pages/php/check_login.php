@@ -1,4 +1,4 @@
-<?php
+<?php/*
 if (isset($_COOKIE["token"])) {
 	$token = $_COOKIE["token"];
 

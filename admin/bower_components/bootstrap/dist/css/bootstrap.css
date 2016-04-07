@@ -2647,7 +2647,6 @@ input[type="search"] {
 #usaForm {
   display:hidden;
   float:left;
-  clear: both;
 }
 .form-group {
   margin: 20px;

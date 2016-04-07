@@ -1,7 +1,7 @@
 $(document).ready(function() {
     //Check box function to display/hide table columns
     $(function() {
-    	$('.country, .address, .city, .zip, .state').hide();
+    	$('.country,.project,.address, .city, .zip, .state').hide();
         var $chk = $(".checkboxes input:checkbox");
         var $tbl = $(".donateTable");
         $chk.click(function() {
