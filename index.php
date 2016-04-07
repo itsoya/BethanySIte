@@ -173,7 +173,6 @@ Thiem's todo list
 										<br>
 										<h2>Total Overall: 1,345</h2>
 										<br>
-
 									</div>
 									<div role="tabpanel" class="tab-pane fade" id="stat-donations">
 										<h2>This year</h2>
