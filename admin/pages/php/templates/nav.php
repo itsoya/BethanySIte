@@ -1,13 +1,6 @@
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 10px">
     <div class="navbar-header">
         <a class="navbar-brand" href="index.php">Bethany Negash Admin Site</a>
-        <!--Navigation button-->
-        <button id="nav-toggle-btn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
     </div>
     <!-- /.navbar-header -->
     <ul class="nav navbar-top-links navbar-right">
@@ -26,12 +19,5 @@
         </li>
         <!-- /.dropdown -->
     </ul>
-    <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav">
-            <li><a href="index.php">Paypal Donations</a></li>
-            <li><a href="cashDonate.php">Cash Donations</a></li>
-        </ul>
-    </div>
-    <!-- /.sidebar-collapse -->
     <!-- /.navbar-static-side -->
 </nav>

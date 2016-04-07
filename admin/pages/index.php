@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Bethany Negash Admin - Paypal Donations</title>
+        <title>Bethany Negash Admin - Moneya Donations</title>
         <?php require "php/templates/heading.php";?>
     </head>
     <body>
@@ -12,10 +12,10 @@
                 <div class="row">
                     <!--The form for donation input into the database-->
                     <div class="col-lg-12">
-                        <form role="form">
+                        <form role="form" action="/Minh/Donation/Paypal/set_paypal_donation.php" method="post">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h2>Paypal Donation Form</h2>
+                                    <h2>Money Donation Form</h2>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -39,9 +39,11 @@
                                 <p class="help-block">* Required</p>
                             </div>
                             <div class="form-group">
-                                <label>Date</label>
-                                <input class="form-control" type="date" name="date"placeholder="Enter text" required>
-                                <p class="help-block">* Required</p>
+                                <label>Payment Type</label>
+                                <select class="form-control" type="type" name="type" name="type">
+                                    <option value="Paypal">Paypal</option>
+                                    <option value="Cash">Cash</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label>Country</label>
@@ -57,12 +59,12 @@
                                     <input class="form-control" type="city" name="city" value="None" placeholder="City">
                                 </div>
                                 <div class="form-group">
-                                    <label>Zip</label>
-                                    <input class="form-control" type="zip" name="zip" value="None" placeholder="zip">
-                                </div>
-                                <div class="form-group">
                                     <label>State</label>
                                     <?php require "php/templates/stateForm.php";?>
+                                </div>
+                                <div class="form-group">
+                                    <label>Zip</label>
+                                    <input class="form-control" type="zip" name="zip" value="None" placeholder="zip">
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-default">Submit Button</button>
@@ -71,18 +73,18 @@
                     <div class="col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h2>Paypal Donation Report Table</h2>
+                                <h2>Money Donation Report Table</h2>
                                 <ul class="checkboxes">
                                     <li><input type="checkbox" name="fname" checked>First Name</li>
                                     <li><input type="checkbox" name="lname" checked>Last Name</li>
                                     <li><input type="checkbox" name="email" checked>Email</li>
                                     <li><input type="checkbox" name="amount" checked>Amount</li>
-                                    <li><input type="checkbox" name="date" checked>Date</li>
+                                    <li><input type="checkbox" name="type" checked>Type</li>
                                     <li><input type="checkbox" name="country">Country</li>
                                     <li><input type="checkbox" name="address">Address</li>
                                     <li><input type="checkbox" name="city">City</li>
-                                    <li><input type="checkbox" name="zip">Zip</li>
                                     <li><input type="checkbox" name="state">State</li>
+                                    <li><input type="checkbox" name="zip">Zip</li>
                                 </ul>
                             </div>
                             <!-- /.panel-heading -->
@@ -95,12 +97,12 @@
                                                 <th class="lname">Last Name</th>
                                                 <th class="email">Email</th>
                                                 <th class="amount">Amount</th>
-                                                <th class="date">Date</th>
+                                                <th class="type">Type</th>
                                                 <th class="country">Country</th>
                                                 <th class="address">Address</th>
                                                 <th class="city">City</th>
-                                                <th class="zip">Zip</th>
                                                 <th class="state">State</th>
+                                                <th class="zip">Zip</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -109,12 +111,12 @@
                                                 <td class="lname">2</td>
                                                 <td class="email">s</td>
                                                 <td class="amount">4</td>
-                                                <td class="date">X</td>
+                                                <td class="type">4</td>
                                                 <td class="country">d</td>
                                                 <td class="address">X</td>
                                                 <td class="city">d</td>
-                                                <td class="zip">X</td>
                                                 <td class="state">d</td>
+                                                <td class="zip">X</td>
                                             </tr>
                                         </tbody>
                                     </table>
