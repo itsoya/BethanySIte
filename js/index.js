@@ -61,7 +61,7 @@ $(function(){
     	for(var k=1;k<=3;k++){
     		projectHTML+='<div class="col-lg-4 col-xs-12">';
 	    		projectHTML+='<div class="project-panel">';
-	    			projectHTML+='<a href="project.php?pID='+globalData['projects']['project'+k]['id']+'">';
+	    			projectHTML+='<a href="project.php?pID=project'+globalData['projects']['project'+k]['id']+'">';
 	    				projectHTML+='<div class="bkgd-color">';
 	    					projectHTML+='<img src="img/facility/'+globalData['projects']['project'+k]['image']+'" class="project-left" alt="Bethany Facility Image">';
 	    					projectHTML+='<div class="project-right">';
