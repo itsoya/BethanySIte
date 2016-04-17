@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<!-- 
+<!--
 Thiem's todo list
 + color design
-+ implement Minh's backend code for real time updates 
++ implement Minh's backend code for real time updates
 -->
 
 <html lang="en">
 	<head>
 		<?php require 'php/templates/heading.php';?>
-		<title>Bethany homepage (testing)</title>
+		<title>Bethany homepage </title>
 	</head>
 	<body data-spy="scroll" data-target="#my-navbar">
 		<?php require 'php/templates/nav.php';?>
