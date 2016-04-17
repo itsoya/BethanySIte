@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
-	//load project page from json
+	//global variables
 	var globalData;
 	var projectID = '';
+
+	//load project page from json
 	$.getJSON("js/content.json", function(data){
 		globalData = data['bethany_negash_foundation']['pages']['projects'];
 		getVariables(globalData);
@@ -24,10 +26,11 @@ $(document).ready(function(){
 		}
 	};
 
+	//calls appropriate function if pID exists in URL or not
 	function getVariables(globalData){
 		var projectID = getUrlParameter('pID');
 		if(projectID === undefined){
-			alert('no projectID');
+			// alert('no projectID');
 			loadDefaultProjectNav();
 			loadProjectDefault(globalData);
 		}
@@ -37,7 +40,7 @@ $(document).ready(function(){
 		}
 	}
 
-	//click event
+	//click event on left side projects
 	$('ul').delegate('li','click',function(){
 		var projectID = $(this).attr('id');
 		loadProjectDetails(projectID);

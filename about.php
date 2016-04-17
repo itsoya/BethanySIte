@@ -24,7 +24,7 @@
 					<div class="about-contact">
 						<h2>Contact Us:</h2>
 
-						<form role="form" action="comment.php" method="get">
+						<form role="form" action="/Minh/contact_admin.php" method="get">
 							<div class="form-group">
 								<label for="name">Name:</label>
 								<input type="name" class="form-control" id="name" name="name">
@@ -34,7 +34,7 @@
 								<input type="email" class="form-control" id="email" name="email">
 							</div>
 							<div class="form-group">
-								<label for="comments">Comments (max 255 words)</label>
+								<label for="comments">Comments (max 1000 characters)</label>
 								<textarea class="form-control" rows="4" id="comment" maxlength="255" name="comments-area"></textarea>
 							</div>
 							<button type="submit" class="btn btn-default">Submit</button>

@@ -1,13 +1,10 @@
-
 <!DOCTYPE html>
-<!-- Goals: homepage and the rest of the pages
-Maybes: Set up admin pages and get general dashboard 
-
+<!-- 
 Thiem's todo list
 + color design
-+ stat overlay for clicking on stat icons - use ajax to pull info onto the overlay - uses index.js
-+ implement Minh's backend code for real time updates
++ implement Minh's backend code for real time updates 
 -->
+
 <html lang="en">
 	<head>
 		<?php require 'php/templates/heading.php';?>
@@ -71,7 +68,7 @@ Thiem's todo list
 			</div> <!-- end row -->
 			<hr>
 			<div class="row load-projects-here">
-				<h1>Latest Projects</h1>
+				<h1 class="section-title-custom">Latest Projects</h1>
 				<div class="col-lg-4 col-xs-12">
 					<div class="project-panel">
 						<a href="#">
@@ -112,96 +109,50 @@ Thiem's todo list
 					</div> <!-- end project-panel -->
 				</div> <!-- end col -->
 			</div> <!-- end row -->
-
 			<hr>
-			<div class="row">
-				<h1>Statistics</h1>
-				<div class="col-md-4">
-					<span class="glyphicon glyphicon-globe glyph-custom" aria-hidden="true" data-target="#myModal" data-toggle="modal"></span>
-					<h2>Website Visitors 2016</h2>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
-							70/100
-						</div>
-					</div> <!-- end progress -->
-				</div> <!-- end col -->
-				<div class="col-md-4">
-					<span class="glyphicon glyphicon-piggy-bank glyph-custom" aria-hidden="true" data-target="#myModal" data-toggle="modal"></span>
-					<h2>Money Donations 2016</h2>
-					<div class="progress">
-						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
-							$70/100
-						</div>
-					</div> <!-- end progress -->
-				</div>
-				<div class="col-md-4">
-					<span class="glyphicon glyphicon-apple glyph-custom" aria-hidden="true" data-target="#myModal" data-toggle="modal"></span>
-					<h2>Visitors to facility 2016</h2>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
-							70/100
-						</div>
-					</div>
-				</div>
-			</div> <!-- end row -->
 
-			<!-- Modal -->
-			<div id="myModal" class="modal fade" role="dialog">
-				<div class="modal-dialog modal-lg">
-
-				<!-- Modal content-->
-					<div class="modal-content">
-						<div class="modal-header">
-
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Stats</h4>
-						</div>
-						<div class="modal-body">
-							<div>
-
-								<!-- Nav tabs -->
-								<ul class="nav nav-tabs" role="tablist">
-									<li role="presentation" class="active"><a href="#stat-visitors-web" aria-controls="stat-visitors-web" role="tab" data-toggle="tab">Website Visitors</a></li>
-									<li role="presentation"><a href="#stat-donations" aria-controls="stat-donations" role="tab" data-toggle="tab">Money Donations</a></li>
-									<li role="presentation"><a href="#stat-visitors-facility" aria-controls="stat-visitors-facility" role="tab" data-toggle="tab">Facility Visitors</a></li>
-								</ul>
-
-								<!-- Tab panes -->
-								<div class="tab-content">
-									<div role="tabpanel" class="tab-pane fade in active" id="stat-visitors-web">
-										<h2>This year: 70</h2>
-										<br>
-										<h2>Total Overall: 1,345</h2>
-										<br>
-									</div>
-									<div role="tabpanel" class="tab-pane fade" id="stat-donations">
-										<h2>This year</h2>
-										<div class="progress">
-											<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
-												$70/100
-											</div>
-										</div> <!-- end progress -->
-										<br>
-										<h2>Total Overall: $1200</h2>
-										<br>
-									</div>
-									<div role="tabpanel" class="tab-pane fade" id="stat-visitors-facility">
-										<h2>This year: 70</h2>
-										<br>
-										<h2>Total Overall: 134</h2>
-										<br>
-									</div>
-								</div>
-
+			<div class="row stat-section-wrapper">
+				<h1 class="section-title-custom">Statistics</h1>
+					<div class="col-md-4 stat-wrapper">
+						<div class="stat-title">Website Visitors</div>
+						<div class="row stat-panel">
+							<div class="col-sm-12">
+								<span class="glyphicon glyphicon-globe glyph-custom2" aria-hidden="true" data-toggle="modal"></span>
 							</div>
-						</div> <!-- end modal-body -->
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-
-				</div>
-			</div>
+							<div class="col-sm-12 stat-text">
+								Current:9999
+								<br>
+								Total:9999
+							</div>
+						</div> <!-- end stat-panel -->
+					</div> <!-- end col -->
+					<div class="col-md-4 load-donation-stat-here">
+						<div class="stat-title">Donations</div>
+						<div class="row stat-panel">
+							<div class="col-sm-12">
+								<span class="glyphicon glyphicon-piggy-bank glyph-custom2" aria-hidden="true" data-toggle="modal"></span>
+							</div>
+							<div class="col-sm-12 stat-text">
+								Current:$9999
+								<br>
+								Total:$9999
+							</div>
+						</div> <!-- end stat-panel -->
+					</div> <!-- end col -->
+					<div class="col-md-4 stat-wrapper load-fac-visitor-stat-here">
+						<div class="stat-title">Facility Visitors</div>
+						<div class="row stat-panel">
+							<div class="col-sm-12">
+								<span class="glyphicon glyphicon-apple glyph-custom2" aria-hidden="true" data-toggle="modal"></span>
+							</div>
+							<div class="col-sm-12 stat-text">
+								Current:9999
+								<br>
+								Total:9999
+							</div>
+						</div> <!-- end stat-panel -->
+					</div> <!-- end col -->
+			</div> <!-- end row -->
 
 		</div> <!-- end main-wrapper -->
 		<!--End of container fluid & main-wrapper-->

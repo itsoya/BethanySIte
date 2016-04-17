@@ -1,11 +1,20 @@
 /*main*/
+/*.row{
+	margin-top:10px;
+}
+#main-wrapper{
+	width:100%;
+	margin:0 auto;
+	padding:0;
+}*/
 .donate-bkgd{
 	background-image: url("../img/facility/image_2.jpg");
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
 	height:auto;
-	padding:30px;
+	min-height:750px;
+	padding:150px 30px;
 }
 .catch-phrase{
 	color:white;

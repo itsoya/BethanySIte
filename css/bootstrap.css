@@ -147,7 +147,8 @@ html {
 
 /*Footer*/
 .footer {
-  background-color: #A3BFE4;
+  /*background-color: #A3BFE4;*/
+  background-color:#6994D3;
   position: inherit;
   width: 100%;
   margin: 0px auto;
@@ -4075,7 +4076,8 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #A3BFE4;
+  /*background-color: #A3BFE4;*/
+  background-color:#A2C5F4;
   border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
