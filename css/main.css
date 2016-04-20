@@ -18,6 +18,7 @@
 	}
 /*end global*/
 /*general*/
+
 	.stat-section-wrapper{
 		/*width:95%;*/
 		margin:0 auto;
@@ -56,6 +57,7 @@
 		font-size: 3em;
 	}
 
+
 /*end general*/
 
 
@@ -87,6 +89,7 @@
 		font-size:1.2em;
 	}
 /*End Nav*/
+
 
 
 /*Main Content*/
@@ -187,6 +190,7 @@
 
 /*End Main Content*/
 
+
 /*footer*/
 	.social-media {
 		text-align: center;
@@ -225,10 +229,16 @@
 	/*Wide Screens*/
 	@media only screen and (min-width:1200px) {
 
+
 	}
 	@media only screen and (max-width:1349px) and (min-width:1200px) {
 
 	}
+
+	}
+	@media only screen and (max-width:1349px) and (min-width:1200px) {
+
+	
 	@media (max-width:1349px) {
 		#logo {
 			display: none;

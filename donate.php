@@ -12,14 +12,14 @@
 					<div class="col-md-12 row donate-bkgd">
 						<div class="col-md-6">
 							<h1 class="catch-phrase">
-								Catch <br> Phrase
+								Help Us <br> Change Lives
 							</h1>
 						</div>
 				        <div class="col-md-6 overlay-content">
-							<h3 class="headline">Headline</h3>
+							<h3 class="headline">How we use the money</h3>
 							<p class="donate-p">
 								<br>
-								Paragraph of content
+								Your financial contribution is used to achieve our mission by educating more young minds. Our services include providing library books, computer access, internet access, and awards for outstanding learners. Your financial contribution helps pay for computers and books, and updating these resources; increases our internet bandwidth to support more children; and expand our services to more locations.
 							</p>
 
 							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">

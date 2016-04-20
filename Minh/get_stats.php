@@ -20,10 +20,15 @@
     $total_web_visitor = $row["total_visitor"]; // This is the total visitors
     $current_year_web_visitor = $row["current_month_visitor"]; // This is the total donation this year
 
+<<<<<<< HEAD
     echo "$current_year_total $total_donation $current_month_visitor $total_visitor $total_web_visitor $current_year_web_visitor";
 
     /*
     echo "total donation: $total_donation <br>total donation this year: $current_year_total
         <br>total visitors: $total_visitor <br>total visitor this month: $current_month_visitor";
         */
+=======
+    echo "$current_year_total $total_donation $current_month_visitor $total_visitor";
+    // echo "$current_year_total $total_donation $current_month_visitor $total_visitor $total_web_visitor $current_year_web_visitor";
+>>>>>>> 5a220c0c1b830824fa387955ff8560bcf36ff54c
 ?>

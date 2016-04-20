@@ -32,48 +32,62 @@ $(document).ready(function(){
 		if(projectID === undefined){
 			// alert('no projectID');
 			loadDefaultProjectNav();
-			loadProjectDefault(globalData);
+			loadProjectNoID(globalData);
 		}
 		else{
 			loadDefaultProjectNav();
-			loadProjectDetails(projectID);		
+			loadProjectHasID(projectID);		
 		}
 	}
 
 	//click event on left side projects
 	$('ul').delegate('li','click',function(){
 		var projectID = $(this).attr('id');
-		loadProjectDetails(projectID);
+		loadProjectHasID(projectID);
+		$('.p-nav').removeClass('active');
+		$(this).addClass('active');
 	});
 
 	function loadDefaultProjectNav(){
 		var innerHTML='';
 		for(var i=1;i<=Object.keys(globalData).length;i++){
-			innerHTML+="<li class='p-nav' id='project" + i + "'>project" + i + "</li>";
+			if(i==1){
+				innerHTML+='<li class="p-nav active" id="project' + i + '">' +globalData['project'+i]['title']+ '</li>';
+			}
+			else{
+				innerHTML+='<li class="p-nav" id="project' + i + '">' +globalData['project'+i]['title']+ '</li>';
+			}
 		}
+		// console.log('projects-nav \n'+innerHTML);
 		$('.projects-nav').html(innerHTML);
 	}
 
 	//gets called when there is no projectID given - loads the page
-	function loadProjectDefault(){	
+	function loadProjectNoID(){	
 		var innerHTML='';
-		innerHTML="<div id='project1' class='tab-content'>";
-			innerHTML+="<h1>" + globalData['project1']['title'] + "</h1>";
-			innerHTML+="<img src='img/facility/" + globalData['project1']['image'] + "'' alt='Project img' class='responsive'>";
-		 	innerHTML+="<p>" + globalData['project1']['content'] + "</p>";
-		 	innerHTML+="<span class='project-author'>Written by: " + globalData['project1']['author'] + "</span>";
-		 innerHTML+="</div>";
-		$('.col-right').html(innerHTML);	
+ 		innerHTML+='<div id="project1" class="tab-content">';
+ 			innerHTML+='<img src="img/facility/' +globalData['project1']['image']+ '" alt="Project img" class="responsive">';
+ 			innerHTML+='<h1>';
+ 				innerHTML+=globalData['project1']['title'];
+ 				innerHTML+='<br>';
+ 				innerHTML+='<span class="project-author">Written by: ' +globalData['project1']['author']+ '</span>';
+ 			innerHTML+='</h1>';
+ 			innerHTML+='<p>' +globalData['project1']['content']+ '</p>';
+ 		innerHTML+='</div>';
+		$('.col-right').html(innerHTML);
 	}
 	//loads the page after the click event and projectID given
-	function loadProjectDetails(projectID){
+	function loadProjectHasID(projectID){
 		var innerHTML='';
-		innerHTML+="<div class='tab-content'>";
-			innerHTML+="<h1>"+globalData[projectID]['title']+"</h1>";
-			innerHTML+="<img src='img/facility/"+globalData[projectID]['image']+"' alt='Project img' class='responsive'>";
-			innerHTML+="<p>"+globalData[projectID]['content']+"</p>";
-			innerHTML+="<span class='project-author'>Written by: "+globalData[projectID]['author']+"</span>";
-		innerHTML+="</div>";
+		innerHTML+='<div id="project1" class="tab-content">';
+			innerHTML+='<img src="img/facility/' +globalData[projectID]['image']+ '" alt="Project img" class="responsive">';
+			innerHTML+='<h1>';
+				innerHTML+=globalData[projectID]['title'];
+				innerHTML+='<br>';
+				innerHTML+='<span class="project-author">Written by: ' +globalData[projectID]['author']+ '</span>';
+			innerHTML+='</h1>';
+			innerHTML+='<p>' +globalData[projectID]['content']+ '</p>';
+		innerHTML+='</div>';
 
 		//console.log(innerHTML);
 		$('.col-right').html(innerHTML);

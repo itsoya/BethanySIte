@@ -10,22 +10,22 @@ $(document).ready(function(){
 	function loadAbout(){
 		var innerHTML='';
 
-		innerHTML+='<img src="img/'+globalData['image']+'" class="col-lg-3 col-md-5 col-sm-12 bethany-img" alt="Bethany Negash Picture">';
+		innerHTML+='<img src="img/' +globalData['image']+ '" class="col-lg-3 col-md-5 col-sm-12 bethany-img" alt="Bethany Negash Picture">';
 		innerHTML+='<div class="col-lg-9 col-md-7 col-sm-12 headline-content">';
-			innerHTML+='<h2>'+globalData['headline1']+'</h2>';
-			innerHTML+=globalData['headline1-content'];
+			innerHTML+='<h2 class="headline-title">' +globalData['headline1']+ '</h2>';
+			innerHTML+='<p class="headline-p">'+ globalData['headline1-content']+ '</p>';
 			innerHTML+='<hr>';
-			innerHTML+='<h2>'+globalData['headline2']+'</h2>';
-			innerHTML+=globalData['headline2-content'];
+			innerHTML+='<h2 class="headline-title">' +globalData['headline2']+ '</h2>';
+			innerHTML+='<p class="headline-p">'+ globalData['headline2-content']+ '</p>';
 			innerHTML+='<hr>';
-			innerHTML+='<h2>'+globalData['headline3']+'</h2>';
-			innerHTML+=globalData['headline3-content'];
+			innerHTML+='<h2 class="headline-title">'+globalData['headline3']+'</h2>';
+			innerHTML+='<p class="headline-p">'+ globalData['headline3-content']+ '</p>';
 
 			//form
 			innerHTML+='<br>';
 			innerHTML+='<hr>';
 			innerHTML+='<div class="about-contact">';
-				innerHTML+='<h2>Contact Us:</h2>'
+				innerHTML+='<h3 class="headline-title">Contact Us: <div class="contact-phone">Phone: ' +globalData['phone']+ '</div></h3>';
 				innerHTML+='<form role="form" action="/Minh/contact_admin.php" method="get">';
 					innerHTML+='<div class="form-group">';
 						innerHTML+='<label for="name">Name:</label>';
@@ -37,7 +37,7 @@ $(document).ready(function(){
 					innerHTML+='</div>';
 					innerHTML+='<div class="form-group">';
 						innerHTML+='<label for="comments">Comments (max 1000 characters)</label>';
-						innerHTML+='<textarea class="form-control" rows="4" id="comment" maxlength="255" name="comments-area"></textarea>';
+						innerHTML+='<textarea class="form-control" rows="4" id="comment" maxlength="1000" name="comments-area"></textarea>';
 					innerHTML+='</div>';
 					innerHTML+='<button type="submit" class="btn btn-default">Submit</button>';
 				innerHTML+='</form>';
