@@ -2644,9 +2644,12 @@ input[type="search"] {
     font-size: x-large;
     list-style: none;
 }
-#usaForm {
+#addressForm {
   display:hidden;
   float:left;
+}
+#format {
+  display:none;
 }
 .form-group {
   margin: 20px;

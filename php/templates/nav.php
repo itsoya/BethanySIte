@@ -8,12 +8,12 @@
 </div>
 <!--End of Banner-->
 <!--Navigation-->
-<nav class="navbar navbar-inverse navbar-static-top" id="my-navbar">
+<nav class="navbar navbar-inverse navbar-static-top" id="my-navbar" data-spy="affix" data-offset-top="197">
   <a href="index.php" ><img id="miniLogo" src="img/miniLogo.png" alt="logo of Bethany Negash Foundation mini version"></a>
   <div>
     <div class="navbar-header">
       <!--Navigation button-->
-      <button id="nav-toggle-btn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+      <button id="nav-toggle-btn" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>

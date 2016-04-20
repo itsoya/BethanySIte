@@ -3,7 +3,7 @@
 	<head>
 		<?php require 'php/templates/heading.php';?>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<title>Bethany homepage (testing)</title>
+		<title>Bethany homepage</title>
 	</head>
 	<body data-spy="scroll" data-target="#my-navbar">
 		<?php require 'php/templates/nav.php';?>

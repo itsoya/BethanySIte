@@ -16,8 +16,25 @@
                 <li><a href="../../index.php"><i class="fa fa-sign-out fa-fw"></i> Back to Site</a></li>
             </ul>
             <!-- /.dropdown-user -->
+            <div class="navbar-header">
+                <!--Navigation button-->
+                <button id="nav-toggle-btn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!--End of navigation button-->
         </li>
         <!-- /.dropdown -->
     </ul>
     <!-- /.navbar-static-side -->
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="nav navbar-nav">
+        <li><a href="index.php">Cash Donations</a></li>
+        <li><a href="visitor.php">Insert Visitors</a></li>
+    </ul>
+</div>
 </nav>

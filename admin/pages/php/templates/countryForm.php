@@ -1,5 +1,5 @@
 <select class="form-control" id="countrySelect" type="country" name="country" name="country">
-	<option value="None">Country</option>
+	<option value="N/A">Country</option>
 	<option value="United States of America">United States of America</option>
 	<option value="Afganistan">Afghanistan</option>
 	<option value="Albania">Albania</option>
