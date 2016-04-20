@@ -23,8 +23,8 @@ $(document).ready(function() {
 		});
 	});
 	//End of top scroll function
-	//Scroll navigation function to make the nav fixed at top
-	window.onscroll = function() {switchNav()};
+	// //Scroll navigation function to make the nav fixed at top
+	// window.onscroll = function() {switchNav()};
 
 	function switchNav() {
 	    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {

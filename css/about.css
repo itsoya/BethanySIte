@@ -1,12 +1,24 @@
-div.headline-content{
-	padding: 30px;
+.row-colored{
+	background-color: rgba(163, 191, 228, 0.50);
+	padding:30px;
 }
 img.bethany-img{
 	padding-right:30px;
 	border-radius:30px;
 	padding:20px;
 }
-.row-colored{
-	background-color: rgba(163, 191, 228, 0.41);
-	padding:30px;
+div.headline-content{
+	padding: 30px;
+}
+.headline-title{
+	font-weight:bold;
+	letter-spacing:3px;
+}
+.contact-phone{
+	float:right;
+}
+.headline-p{
+	word-spacing:1px;
+	line-height:1.45em;
+	font-size:1em;
 }

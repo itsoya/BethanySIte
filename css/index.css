@@ -1,0 +1,261 @@
+/*carousel*/
+	.carousel{
+		padding:0px;
+		margin: 0px auto;
+		width: 100%;
+		height: auto;
+	}
+	.item-container{
+		padding:0px;
+		margin:0px;
+	}
+	.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img, .carousel-inner > .item > div > img{
+		max-width: initial;
+		max-height: initial;
+		height:200px;
+		width:100%;
+	}
+	.carousel-img{
+		margin:0px;
+		padding:0px;
+	}
+	.carousel-content{
+		padding:0px;
+	}
+	.carousel-p{
+		height:300px;
+		background-color:rgba(163, 191, 228, 0.78);
+		word-spacing:1px;
+		line-height:1.45em;
+		padding:5%;
+		height:auto;
+	}
+	.carousel-p p{
+		line-height:1.7em;
+	}
+	.carousel-p h1{
+		text-align:center;
+		font-size:1.8em;
+		font-weight:bold;
+		letter-spacing:3px;
+		margin:0px 0px 20px 0px;
+	}
+
+	.carousel-indicators{
+		position:absolute;
+		bottom:-28px;
+	}
+	.carousel-indicators li{
+		background-color: #A3BFE4;
+		width:20px;
+		height:20px;
+		border-radius:20px;
+		margin-top:10px;
+	}
+	.carousel-indicators .active{
+		background-color: rgb(70, 93, 166);
+		width:25px;
+		height:25px;
+		border-radius:25px;
+	}
+/*end carousel*/
+/*project panels*/
+	.project-panel{
+		box-shadow:2px 2px 5px lightgray;
+		word-spacing:1px;
+	}
+	.project-panel:hover{
+		box-shadow: 0px 0px 50px #A3BFE4;
+	  	transition: box-shadow 0.1s ease-in-out;
+	}
+	.project-panel div:hover{
+		background-color:lightblue;
+		transition: background-color 0.1s ease-in-out;
+	}
+	.project-panel a{
+		text-decoration:none;
+		color:black;
+	}
+	.project-panel .bkgd-color{
+		background-color:#A3BFE4;
+		height:200px;
+	}
+	.panel-content{
+		height:200px;
+		float:left;
+		overflow-y:hidden;
+	}
+	.panel-content img{
+		width:30%;
+		float:left;
+		padding:0px 10px 5px 0px;
+	}
+	.project-title{
+		margin:0px;
+		font-size:1.45em;
+		letter-spacing:1.1px;
+	}
+	.project-author{
+		font-size:.7em;
+		letter-spacing:initial;
+	}
+	p.project-content{
+		margin-top:10px;
+		padding:0px 10px 10px 10px;
+		line-height:1.45em;
+		font-size:1.1em;
+	}
+/*end project panels*/
+
+
+
+/*stats*/
+	.stat-section-wrapper{
+		/*width:95%;*/
+		margin:0 auto;
+	}
+	.stat-wrapper{
+		/*padding:0px 50px;*/
+	}
+	.stat-icon{
+		width:112px;
+	}
+	.icon-credit{
+		display:none;
+	}
+	.glyph-custom2 {
+		font-size: 8em;
+		display:inline-block;
+	}
+	.stat-panel{
+		background-color:rgba(175, 202, 238, 0.6);
+		text-align:center;
+		margin:3px 0px;
+		padding-top:15px;
+	}
+	.stat-title{
+		font-size:2.0em;
+		border-bottom:1px solid black;
+		background-color:rgba(175, 202, 238, 0.6);
+		text-align:center;
+		letter-spacing:2.5px;
+	}
+	.stat-text{
+		text-align:center;
+		font-size:1.6em;
+		padding-top:10px;
+		letter-spacing:1.1px;
+	}
+	.row .fac-img {
+		width: 400px;
+		height: 350px;
+	}
+/*end stats*/
+
+/*End Main Content*/
+
+/*footer*/
+	.social-media {
+		text-align: center;
+		display:none;
+	}
+/*end footer*/
+
+/*Media Queries*/
+	/*super tiny?*/
+	@media only screen and (min-width:150px){
+
+	}
+	/*Small Devices - phones*/
+	@media only screen and (min-width:480px){
+		.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img, .carousel-inner > .item > div > img {
+			height:270px;
+		}
+		.carousel-p{
+			font-size:1em;
+		}
+		.carousel-p p{
+			font-size:1em;
+		}
+		.project-title{
+			font-size:1.5em;
+		}
+		.project-author{
+			font-size:.7em;
+		}
+	}
+	/*tablets*/
+	@media only screen and (min-width:768px){
+		.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img, .carousel-inner > .item > div > img {
+			height:300px;
+		}
+		.carousel-p{
+			font-size:1.1em;
+		}
+		.carousel-p p{
+			font-size:.9em;
+		}
+		.project-title{
+			font-size:1.6em;
+		}
+		.project-author{
+			font-size:.65em;
+		}
+	}
+
+	/*Desktops*/
+	@media only screen and (min-width:992px) {
+		.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img, .carousel-inner > .item > div > img {
+			height:390px;
+		}
+		.carousel-p{
+			font-size:1.6em;
+		}
+		.carousel-p p{
+			font-size:.6em;
+		}
+		.project-title{
+			font-size:1.7em;
+		}
+		.project-author{
+			font-size:.57em;
+		}
+	}
+
+	/*Wide Screens*/
+	@media only screen and (min-width:1200px) {
+		.carousel-p{
+			font-size:2em;
+			height:390px;
+		}
+		.project-title{
+			font-size:1.8em;
+		}
+		.project-author{
+			font-size:.54em;
+		}
+
+	}
+
+	/*Itsoya's media queries*/
+	@media only screen and (min-height:900px) {
+		#main-wrapper {
+			min-height: 944px;
+		}
+	}
+	
+
+	
+	@media only screen and (max-width:1349px) and (min-width:1200px) {
+
+	}
+	@media (max-width:1349px) {
+		#logo {
+			display: none;
+		}
+		#miniLogo {
+			display: inherit !important;
+		}
+	}
+
+/*End Media Queries

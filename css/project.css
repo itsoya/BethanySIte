@@ -1,5 +1,7 @@
 /*General*/
-.main-wrapper{}
+.main-wrapper{
+
+}
 
 /*Content*/
     /*col-left*/
@@ -7,30 +9,26 @@
             padding:0px;
         }
         .col-left {
-            line-height:30px;
             background-color:#eeeeee;
             width:25%;
             float:left;
-            padding:5px;
+            font-size:1.6em;
+            margin-top:30px;
         }
         .col-left li{
             list-style:none;
+            padding:40px;
+            letter-spacing:3px;
         }
-        .col-left a{
-            display:block;
-            text-decoration:none;
-            text-align:center;
-        }
-        .col-left a:hover{
-            background-color:rgb(150, 183, 226);
-            color:rgb(73, 104, 144);
+        .col-left li:hover{
+            background-color:rgba(60, 79, 141, 0.75);
+            color:white;
             transition:background-color 0.3s ease-in-out;
         }
         .active {
             font-weight:bold;
-            background-color:rgba(173, 197, 228, 0.8);
+            background-color:rgb(60, 79, 141);
             color:white;
-            transition:background-color 0.3s ease-in-out;
         }
     /*end col-left*/
 
@@ -38,17 +36,32 @@
         .tab-content {
             width:75%;
             float:left;
-            padding:10px;
+            text-align:center;
+            margin-top:30px;
+            padding:0px 70px;
+        }
+        .tab-content h1{
+            margin-top:0px;
+            margin-left:30px;
+            font-weight:bold;
+            font-size:2.5em;
+            word-spacing:1px;
             text-align:center;
         }
+        .tab-content .project-author{
+            font-size:.5em;
+            font-weight:normal;
+        }
         .tab-content img{
-            margin: 20px 0px;
-            padding:0px 40px;
-            width:900px;
-            height:400px;
+            width:690px;
+            height:390px;
+            float:right;
+            padding:0px 30px 30px 30px;
         }
         .tab-content p{
             text-align:left;
-            padding:0px 70px;
+            line-height:1.7em;
+            word-spacing:1px;
+            padding:10px;
         }
     /*end col-right*/

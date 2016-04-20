@@ -17,9 +17,5 @@
     $current_month_visitor = $row["current_month_visitor"]; // This is the total donation this year
 
     echo "$current_year_total $total_donation $current_month_visitor $total_visitor";
-
-    /*
-    echo "total donation: $total_donation <br>total donation this year: $current_year_total
-        <br>total visitors: $total_visitor <br>total visitor this month: $current_month_visitor";
-        */
+    // echo "$current_year_total $total_donation $current_month_visitor $total_visitor $total_web_visitor $current_year_web_visitor";
 ?>
