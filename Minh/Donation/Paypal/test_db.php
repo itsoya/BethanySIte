@@ -1,7 +1,7 @@
 <html>
 <head></head>
 <body>
-    <form action="set_paypal_donation.php" method="post">
+    <form action="../set_donation.php" method="post">
         <input type="text" name="fName" value="minh"></input>
         <input type="text" name="lName" value="minh"></input>
         <input type="text" name="amount" value="30.00"></input>

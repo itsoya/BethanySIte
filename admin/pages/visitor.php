@@ -12,7 +12,7 @@
                 <div class="row">
                     <!--The form for donation input into the database-->
                     <div class="col-lg-12">
-                        <form role="form" action="/Minh/Donation/set_donation.php" method="post">
+                        <form role="form" action="/Minh/set_facility_visitor.php" method="post">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h2>Page Visitors Form</h2>
@@ -28,7 +28,7 @@
                                 <input id="datepicker" class="form-control" name="visitDate" required>
                                 <p class="help-block"> * Required</p>
                                 <select id="format">
-                                    <option value="d MM, yy">Medium - d MM, y</option>
+                                    <option value="dd MM yy">Medium - dd MM y</option>
                                 </select>
                             </div>
                             <button type="submit" class="btn btn-default">Submit Button</button>
@@ -39,8 +39,10 @@
                             <div class="panel-heading">
                                 <h2>Money Donation Report Table</h2>
                                 <ul class="checkboxes">
-                                    <li><input type="checkbox" name="visits" checked>Visitors</li>
-                                    <li><input type="checkbox" name="visitDate" checked>Visitor Date</li>
+                                    <li><input type="checkbox" name="visitors" checked>Total Visitors</li>
+                                    <li><input type="checkbox" name="dayDate" checked>Day</li>
+                                    <li><input type="checkbox" name="monthDate" checked>Month</li>
+                                    <li><input type="checkbox" name="yearDate" checked>Year</li>
                                 </ul>
                             </div>
                             <!-- /.panel-heading -->
@@ -49,11 +51,13 @@
                                     <table class="table table-striped table-bordered table-hover donateTable" ><!-- id="dataTables-example" -->
                                     <thead>
                                         <tr>
-                                            <th class="visits">Visitors</th>
-                                            <th class="visitDate">Visitor Date</th>
+                                            <th class="visitors">Visitors</th>
+                                            <th class="dayDate">Day</th>
+                                            <th class="monthDate">Month</th>
+                                            <th class="yearDate">Year</th>
                                         </tr>
                                     </thead>
-                                    <tbody class="tableData">
+                                    <tbody class="tableDataVisit">
                                     </tbody>
                                 </table>
                             </div>

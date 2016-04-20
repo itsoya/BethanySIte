@@ -67,7 +67,7 @@
                 $(".container").hide();
                 alert("Please request a new password reset.");
             }
-            $("#password_reset_tittle").val() = "Password Reset for: " + email;
+            $("#password_reset_tittle").text("Password Reset for: " + email);
 
             $("#b_password_reset").click(function(){
                 var password = $("#t_password").val();
@@ -87,8 +87,8 @@
         function Forget_Email(password){
             $.ajax({
                 method : "POST",
-                url : "../../Minh/Auth/password_reset.php",
-                data : {"password" : password},
+                url : "/Minh/Auth/password_reset.php",
+                data : {"email" : email, "password" : password, "token": token},
                 success : (function (returnData) {
                     /*
                     if(returnData == "success") {
@@ -102,6 +102,7 @@
                     alert(returnData);
                 })
             });
+
         }
     </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -120,7 +121,7 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title" id="password_reset_tittle">Reset Password</h3>
+                        <h2 class="panel-title" id="password_reset_tittle">Reset Password</h3>
                     </div>
                     <div class="panel-body">
                         <form role="form">
@@ -132,7 +133,7 @@
                                     <input class="form-control" type="password" autofocus id="t_password_confirm"></input>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <input type="button" class="btn btn-lg btn-success btn-block" value="Forgot Email" id="b_password_reset"></input>
+                                <input type="button" class="btn btn-lg btn-success btn-block" value="Reset Password" id="b_password_reset"></input>
                                 <a href="../../index.php" class="btn btn-lg btn-success btn-block">Back to Site</a>
                             </fieldset>
                         </form>

@@ -38,15 +38,15 @@
                 url : "../../Minh/Auth/forgot_password.php",
                 data : {"email" : email},
                 success : (function (returnData) {
-                    /*
+
                     if(returnData == "success") {
-                        alert("An password reset email has been sent.");
+                        alert("A password reset email has been sent.");
                     }
                     else {
                         alert("Email does not exists.");
                     }
-                    */
-                    alert(returnData);
+
+                    //alert(returnData);
                 })
             });
         }
@@ -67,7 +67,7 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Sign Up</h3>
+                        <h3 class="panel-title">Forgot Password</h3>
                     </div>
                     <div class="panel-body">
                         <form role="form">

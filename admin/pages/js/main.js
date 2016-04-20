@@ -22,7 +22,7 @@ $(document).ready(function() {
     });
 
 
-    //Function to pull database information and display in table
+    //Function to pull database information and display in donations table
     $.ajax({
         type: 'POST',
         dataType: "json",
@@ -49,7 +49,26 @@ $(document).ready(function() {
             table.append(insertData);
         }
     });
-
+    //To display the data from the database to the visitor page table
+    $.ajax({
+        type: 'POST',
+        dataType: "json",
+        url: "http://bethanynegashfoundation.org/Minh/get_facility_visitors.php",
+        success: function(result) {
+            var table = $('.tableDataVisit');
+            var insertData = "";
+            for (var i = 0; i < result.length; i++) {
+                insertData += "<tr>";
+                insertData += "<td class='visits'>" + result[i].total_visitor + "</td>";
+                insertData += "<td class='dayDate'>" + result[i].day + "</td>";
+                insertData += "<td class='monthDate'>" + result[i].month + "</td>";
+                insertData += "<td class='yearDate'>" + result[i].year + "</td>";
+                insertData += "</tr>";
+            }
+            table.append(insertData);
+        }
+    });
+    //Works with the calander to display the correct format
   $(function() {
     $( "#datepicker" ).datepicker();
     $( "#format" ).hide(function() {
