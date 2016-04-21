@@ -57,7 +57,7 @@
         }
         .col-left{
             position:absolute;
-            width:480px;
+            width:300px;
             left:-520px;
         }
         .col-left li{
@@ -100,7 +100,7 @@
         .tab-content img{
             width:50%;
             min-width:300px;
-            float:right;
+            float:initial;
             padding:0px 30px 30px 30px;
         }
         .tab-content p{
@@ -115,14 +115,21 @@
 /*Media Queries*/
 /*super tiny?*/
     @media only screen and (min-width:150px){
-
     }
     /*Small Devices - phones*/
     @media only screen and (min-width:480px){
-
+        .col-left{
+            width:400px;
+        }
     }
     /*tablets*/
     @media only screen and (min-width:768px){
+        .col-left{
+            width:480px;
+        }
+        .tab-content img{
+            float:right;
+        }
     }
 
     /*Desktops*/
