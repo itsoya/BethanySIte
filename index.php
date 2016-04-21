@@ -120,8 +120,8 @@
 
 			<div class="row stat-section-wrapper">
 				<h1 class="section-title-custom">Statistics</h1>
-					<div class="col-md-4 stat-wrapper">
-						<div class="stat-title load-web-visitor-stat-here">Website Visitors</div>
+					<div class="col-md-4 load-web-visitor-stat-here">
+						<div class="stat-title">Website Visitors</div>
 						<div class="row stat-panel">
 							<div class="col-sm-12">
 								<!-- icon credits -->

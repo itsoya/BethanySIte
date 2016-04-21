@@ -10,8 +10,10 @@ $(document).ready(function(){
 	function loadAbout(){
 		var innerHTML='';
 
-		innerHTML+='<img src="img/' +globalData['image']+ '" class="col-lg-3 col-md-5 col-sm-12 bethany-img" alt="Bethany Negash Picture">';
-		innerHTML+='<div class="col-lg-9 col-md-7 col-sm-12 headline-content">';
+		innerHTML+='<div class="col-sm-3">';
+			innerHTML+='<img src="img/' +globalData['image']+ '" class="bethany-img center responsive" alt="Bethany Negash Picture">'
+		innerHTML+='</div>';
+		innerHTML+='<div class="col-sm-9 headline-content">';
 			innerHTML+='<h2 class="headline-title">' +globalData['headline1']+ '</h2>';
 			innerHTML+='<p class="headline-p">'+ globalData['headline1-content']+ '</p>';
 			innerHTML+='<hr>';

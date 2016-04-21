@@ -40,6 +40,27 @@ $(document).ready(function(){
 		}
 	}
 
+	//slides right to reveal sidenav
+	var navOut=false;
+	$('.side-nav-btn').on('click', function(){
+		$('.side-nav-btn').toggleClass('rotate');
+		if(navOut==false){
+			$('#main-wrapper').css('left','520px');
+			navOut=true;
+		}
+		else if(navOut==true){
+			$('#main-wrapper').css('left','0px');
+			navOut=false
+		}
+	});
+	$(window).resize(function(){
+		if($(window).width()<=1349){
+			$('.side-nav-btn').removeClass('rotate');
+			$('#main-wrapper').css('left','0px');
+			navOut=false
+		}
+	});
+
 	//click event on left side projects
 	$('ul').delegate('li','click',function(){
 		var projectID = $(this).attr('id');

@@ -7,12 +7,13 @@ $(function(){
         interval: 150000000
     });
 
-    //calls stat from stat.php file
+    //calls stat from stat.php file and changes the json string into json object format
     function statCall(handleData){
 	    $.ajax({
 	    	url:'../Minh/get_stats.php',
 	    	type:'POST',
 	    	success: function(data){
+	    		data = JSON.parse(data);
 	    		handleData(data);
 	    		console.log(data);
 	    	}
@@ -97,18 +98,34 @@ $(function(){
 	    statCall(function(handleData){
 	    	var statHTML='';
 	    	var date = new Date();
-	    	var temp = handleData;
-	    	var stat = temp.split(" ");
+	    	var stat = handleData;
+	    	// console.log('total donation: '+stat['total_donation']);
 			var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+	    	//website visitor stats
+	    	statHTML+='<div class="stat-title">Website Visitors</div>';
+	    		statHTML+='<div class="row stat-panel">';
+	    			statHTML+='<div class="col-sm-12">';
+	    				statHTML+='<div class="icon-credit">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>';
+	    				statHTML+='<img class="stat-icon" src="img/icons/connection.svg">';
+	    			statHTML+='</div>';
+	    			statHTML+='<div class="col-sm-12 stat-text" alt="website visitor icon">';
+	    				statHTML+='Current Year(' +date.getFullYear()+ '):' +stat['current_year_web_visitor']+ ' <br>Total: ' +stat['total_web_visitor'];
+	    			statHTML+='</div>'
+	    		statHTML+='</div>';
+	    	statHTML+='</div>';
+
+	    	$('.load-web-visitor-stat-here').html(statHTML);
+
 	    	//donation stats
+	    	statHTML=''; //resets string
 	    	statHTML+='<div class="stat-title">Donations</div>';
 	    		statHTML+='<div class="row stat-panel">';
 	    			statHTML+='<div class="col-sm-12">';
 	    				statHTML+='<span class="glyphicon glyphicon-piggy-bank glyph-custom2" aria-hidden="true" data-toggle="modal"></span>';
 	    			statHTML+='</div>';
 	    			statHTML+='<div class="col-sm-12 stat-text">';
-	    				statHTML+='Current Year('+date.getFullYear()+'): $'+stat[0]+'<br>Total: $'+stat[1];
+	    				statHTML+='Current Year(' +date.getFullYear()+ '): $' +stat['current_year_total']+ '<br>Total: $' +stat['total_donation'];
 	    			statHTML+='</div>';
 	    		statHTML+='</div>';
 	    	statHTML+='</div>';
@@ -124,7 +141,7 @@ $(function(){
 						statHTML+='<img class="stat-icon" src="img/icons/foot.svg" alt="facility visitor icon">';
 	    			statHTML+='</div>';
 	    			statHTML+='<div class="col-sm-12 stat-text">';
-	    				statHTML+='This month ('+month[date.getMonth()]+'): '+stat[2]+'<br>Total: '+stat[3];
+	    				statHTML+='This month (' +month[date.getMonth()]+ '): ' +stat['current_month_visitor']+ '<br>Total: ' +stat['total_visitor'];
 	    			statHTML+='</div>';
 	    		statHTML+='</div>';
 	    	statHTML+='</div>';
