@@ -34,7 +34,7 @@ $(function(){
 	    	if(i==1){
 	    		carouselHTML+='<div class="item active item-container">';
 	    			carouselHTML+='<div class="col-sm-4 carousel-img">';
-	    				carouselHTML+='<img src="img/facility/'+globalData['home']['gallery'+i]['image']+'" alt="BNF kids" class="img-responsive">';
+	    				carouselHTML+='<img src="img/'+globalData['home']['gallery'+i]['image']+'" alt="BNF kids" class="img-responsive">';
 	    			carouselHTML+='</div>';
 	    			carouselHTML+='<div class="col-sm-8 carousel-content">';
 	    				carouselHTML+='<div class="carousel-p">';
@@ -47,7 +47,7 @@ $(function(){
 	    	else{
 	    		carouselHTML+='<div class="item item-container item-container">';
 	    			carouselHTML+='<div class="col-sm-4 carousel-img">';
-	    				carouselHTML+='<img src="img/facility/'+globalData['home']['gallery'+i]['image']+'" alt="BNF kids" class="img-responsive">';
+	    				carouselHTML+='<img src="img/'+globalData['home']['gallery'+i]['image']+'" alt="BNF kids" class="img-responsive">';
 	    			carouselHTML+='</div>';
 	    			carouselHTML+='<div class="col-sm-8 carousel-content">';
 	    				carouselHTML+='<div class="carousel-p">';
@@ -79,7 +79,7 @@ $(function(){
 	    			projectHTML+='<a href="project.php?pID=project' +globalData['projects']['project'+k]['id']+ '">';
 	    				projectHTML+='<div class="bkgd-color">';
 	    					projectHTML+='<div class="panel-content">';
-		    					projectHTML+='<img src="img/facility/' +globalData['projects']['project'+k]['image']+ '" alt="Bethany Facility Image">';
+		    					projectHTML+='<img src="img/' +globalData['projects']['project'+k]['image']+ '" alt="Bethany Facility Image">';
 	    						projectHTML+='<h3 class="project-title">';
 	    							projectHTML+=globalData['projects']['project'+k]['title'];
 	    							projectHTML+='<br>';

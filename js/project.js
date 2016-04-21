@@ -87,7 +87,7 @@ $(document).ready(function(){
 	function loadProjectNoID(){	
 		var innerHTML='';
  		innerHTML+='<div id="project1" class="tab-content">';
- 			innerHTML+='<img src="img/facility/' +globalData['project1']['image']+ '" alt="Project img" class="responsive">';
+ 			innerHTML+='<img src="img/' +globalData['project1']['image']+ '" alt="Project img" class="responsive">';
  			innerHTML+='<h1>';
  				innerHTML+=globalData['project1']['title'];
  				innerHTML+='<br>';
@@ -101,7 +101,7 @@ $(document).ready(function(){
 	function loadProjectHasID(projectID){
 		var innerHTML='';
 		innerHTML+='<div id="project1" class="tab-content">';
-			innerHTML+='<img src="img/facility/' +globalData[projectID]['image']+ '" alt="Project img" class="responsive">';
+			innerHTML+='<img src="img/' +globalData[projectID]['image']+ '" alt="Project img" class="responsive">';
 			innerHTML+='<h1>';
 				innerHTML+=globalData[projectID]['title'];
 				innerHTML+='<br>';

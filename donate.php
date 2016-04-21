@@ -30,7 +30,7 @@
 					            <input type="hidden" name="no_note" value="0">
 					            <input type="hidden" name="currency_code" value="USD">
 					            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-					            <input type="image" src="img/paypal-donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" class="donate-btn">
+					            <input type="image" src="img/dev/paypal-donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" class="donate-btn">
 					            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 					        </form>
 

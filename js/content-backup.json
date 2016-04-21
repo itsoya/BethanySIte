@@ -1,0 +1,75 @@
+{
+  "bethany_negash_foundation": {
+    "pages": {
+      "home": {
+        "gallery1": {
+          "title": "Educating Young Minds",
+          "image": "image_1.jpg",
+          "content": "At Bethany we believe education opens the door for success.Our heart goes out for those with limited educational opportunities. We endeavor to provide education through ICT (Information and Communication Technology) centers with books and computers."
+        },
+		  "gallery2": {
+          "title": "Educating Young Minds",
+          "image": "image_2.jpg",
+          "content": "At Bethany we believe education opens the door for success.Our heart goes out for those with limited educational opportunities. We endeavor to provide education through ICT (Information and Communication Technology) centers with books and computers."
+        },
+		  "gallery3": {
+          "title": "Educating Young Minds",
+          "image": "image_3.jpg",
+          "content": "At Bethany we believe education opens the door for success.Our heart goes out for those with limited educational opportunities. We endeavor to provide education through ICT (Information and Communication Technology) centers with books and computers."
+        }
+      },
+      "about_us": {
+        "image": "bethany-closeup.jpg",
+        "phone": "555-555-5555",
+        "headline1": "Our story",
+        "headline1-content": "The accidental death of our baby Bethany at age two was agonizing we wish will never happen to any parent. We dealt with the pain of loosing Bethany by helping others. In 2003 we incorporated a charitable organization in California and began work with twelve (12) orphans. We wanted to expand educational opportunities and started and ICT Center where we provide library and educational services. Today we have a library center named after Bethany with two dozen computers and over five thousand books.",
+        "headline2": "Our Mission",
+        "headline2-content": "To educate and assist young minds in their quest to become self sufficient and productive citzens.",
+        "headline3": "How you can help",
+        "headline3-content": "Join us in promoting and executing our mission through your financial support."
+      },
+      "donate": {
+		    "catch-phrase" : "Help Us <br> Change Lives",
+        "headline": "How funds are used",
+        "donate-paragraph": "Your financial contribution is used to achieve our mission by educating more young minds. Our services include providing library books, computer access, internet access, and awards for outstanding learners. Your financial contribution helps pay for computers and books, and updating these resources; increases our internet bandwidth to support more children; and expand our services to more locations."
+      },
+      "projects": {
+        "project1": {
+          "id": "1",
+          "title": "Empowering Young Minds",
+          "image": "image_1.jpg",
+          "content": "At Bethany we believe education opens the door for success.Our heart goes out for those with limited educational opportunities. We endeavor to provide education through ICT (Information and Communication Technology) centers with books and computers.",
+		      "author": "Dr. Solomon Negash"
+        },
+        "project2": {
+          "id": "2",
+          "title": "Increasing Knowledge",
+          "image": "image_2.jpg",
+          "content": "Internet connectivity at our library center is a beacon of light for seeking knowledge. Despite the limited connectivity and bandwidth many appreciate this valuable resource.",
+          "author": "Thiem"
+        },
+        "project3": {
+          "id": "3",
+          "title": "Helping Hands",
+          "image": "image_3.jpg",
+          "content": "Turkey testing cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankleTurkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.",
+          "author": "Sally Adam"
+        },
+        "project4": {
+          "id": "4",
+          "title": "Computer Literacy",
+          "image": "image_4.jpg",
+          "content": "Turkey testing cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankleTurkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.",
+          "author": "Sally Adam"
+        },
+        "project5": {
+          "id": "5",
+          "title": "Changing lives through books",
+          "image": "image_5.jpg",
+          "content": "Turkey testing cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle Turkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankleTurkey cow jerky corned beef swine ground round chicken beef ribs bacon ham hock ribeye kevin short loin tongue shankle. Pork chop ham cow corned beef, kevin brisket tongue drumstick pastrami tenderloin bresaola alcatra short ribs capicola.Strip steak shankle venison landjaeger, porchetta pork belly pig ground round filet mignon corned beef prosciutto rump. Frankfurter ribeye swine tenderloin. Boudin tenderloin doner pancetta short loin capicola bresaola ham hock. Flank tri-tip jowl ham hock bacon sausage. Jerky tongue cow bacon. Cow tri-tip fatback, shank pig picanha leberkas t-bone chuck prosciutto pork loin shoulder ham shankle.",
+          "author": "Sally Adam"
+        }
+      }
+    }
+  }
+}
