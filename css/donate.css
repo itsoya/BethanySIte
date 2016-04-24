@@ -35,6 +35,10 @@ p.donate-p{
 	word-spacing:1px;
 	line-height:1.45em;
 }
+.donate-warning{
+	color:red;
+	font-weight:bold;
+}
 /*end main*/
 
 /*media queries*/

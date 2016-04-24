@@ -12,7 +12,7 @@
 	display: block;
 	margin: 0px;
 	opacity: .5;
-	background: #ddd url(img/up-arrow.png) no-repeat center center;
+	background: #ddd url(img/dev/up-arrow.png) no-repeat center center;
 	/* rounded corners */
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;

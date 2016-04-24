@@ -14,7 +14,7 @@
 					<div class="carousel-inner load-carousel-here" role="listbox">
 						<div class="item active item-container">
 							<div class="col-sm-4 carousel-img">
-								<img src="img//image_10_this.jpg" alt="BNF kids" class="img-responsive">
+								<img src="img/image_10_this.jpg" alt="BNF kids" class="img-responsive">
 							</div> <!-- end carousel-img -->
 							<div class="col-sm-8 carousel-content">
 								<div class="carousel-p">
@@ -25,7 +25,7 @@
 						</div> <!-- end item-container -->
 						<div class="item item-container">
 							<div class="col-sm-4 carousel-img">
-								<img src="img//image_10_this.jpg" alt="BNF kids" class="img-responsive">
+								<img src="img/image_10_this.jpg" alt="BNF kids" class="img-responsive">
 							</div> <!-- end carousel-img -->
 							<div class="col-sm-8 carousel-content">
 								<div class="carousel-p">
@@ -36,7 +36,7 @@
 						</div> <!-- end item-container -->
 						<div class="item item-container">
 							<div class="col-sm-4 carousel-img">
-								<img src="img//image_10_this.jpg" alt="BNF kids" class="img-responsive">
+								<img src="img/image_10_this.jpg" alt="BNF kids" class="img-responsive">
 							</div> <!-- end carousel-img -->
 							<div class="col-sm-8 carousel-content">
 								<div class="carousel-p">
@@ -69,7 +69,7 @@
 						<a href="#">
 							<div class="bkgd-color">
 								<div class="panel-content">
-									<img src="img//image_1.jpg" alt="Bethany Facility Image">
+									<img src="img/image_1.jpg" alt="Bethany Facility Image">
 									<h3 class="project-title">
 										Books for Kids
 										<br>
@@ -86,7 +86,7 @@
 						<a href="#">
 							<div class="bkgd-color">
 								<div class="panel-content">
-									<img src="img//image_1.jpg" alt="Bethany Facility Image">
+									<img src="img/image_1.jpg" alt="Bethany Facility Image">
 									<h3 class="project-title">
 										Books for Kids
 										<br>
@@ -103,7 +103,7 @@
 						<a href="#">
 							<div class="bkgd-color">
 								<div class="panel-content">
-									<img src="img//image_1.jpg" alt="Bethany Facility Image">
+									<img src="img/image_1.jpg" alt="Bethany Facility Image">
 									<h3 class="project-title">
 										Books for Kids
 										<br>

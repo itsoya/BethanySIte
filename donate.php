@@ -21,18 +21,14 @@
 								<br>
 								Your financial contribution is used to achieve our mission by educating more young minds. Our services include providing library books, computer access, internet access, and awards for outstanding learners. Your financial contribution helps pay for computers and books, and updating these resources; increases our internet bandwidth to support more children; and expand our services to more locations.
 							</p>
+							<div class="donate-warning">This button below will redirect you to PayPal to accept your donation</div>
 
-							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					            <input type="hidden" name="cmd" value="_donations">
-					            <input type="hidden" name="business" value="minhdi11@gmail.com">
-					            <input type="hidden" name="lc" value="US">
-					            <input type="hidden" name="item_name" value="Bethany Negash Foundation">
-					            <input type="hidden" name="no_note" value="0">
-					            <input type="hidden" name="currency_code" value="USD">
-					            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-					            <input type="image" src="img/dev/paypal-donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" class="donate-btn">
-					            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-					        </form>
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"> 
+								<input type="hidden" name="cmd" value="_s-xclick"> 
+								<input type="hidden" name="hosted_button_id" value="ZWMD84PNFXET2"> 
+								<input type="image" src="img/dev/paypal-donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> 
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> 
+							</form>
 
 				        </div> <!-- end overlay content -->
 					</div> <!-- end donate-bkgd -->

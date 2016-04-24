@@ -6,6 +6,7 @@ $(document).ready(function(){
 		globalData = data['bethany_negash_foundation']['pages']['donate'];
 		loadDonate();
 		console.log(globalData);
+		$('.donate-bkgd').css('background-image', 'url(img/' +globalData['background-image']+ ')');;
 	});
 
 	function loadDonate(){
@@ -22,9 +23,9 @@ $(document).ready(function(){
 				innerHTML+='<p class="donate-p">';
 					innerHTML+='<br>';
 					innerHTML+=globalData['donate-paragraph'];
-					innerHTML+='<br>';
+					innerHTML+='<div class="donate-warning">' +globalData['donate-warning']+ '</div>';
 				innerHTML+='</p>';
-				innerHTML+='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="minhdi11@gmail.com"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Bethany Negash Foundation"><input type="hidden" name="no_note" value="0"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest"><input type="image" src="img/dev/paypal-donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" class="donate-btn"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+				innerHTML+='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"> <input type="hidden" name="cmd" value="_s-xclick"> <input type="hidden" name="hosted_button_id" value="ZWMD84PNFXET2"> <input type="image" src="img/dev/paypal-donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> </form>';
 			innerHTML+='</div>';
 		innerHTML+='</div>';
 
