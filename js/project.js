@@ -35,7 +35,7 @@ $(document).ready(function(){
 			loadProjectNoID(globalData);
 		}
 		else{
-			loadDefaultProjectNav();
+			loadProjectNavHasID(projectID);
 			loadProjectHasID(projectID);		
 		}
 	}
@@ -69,10 +69,27 @@ $(document).ready(function(){
 		$(this).addClass('active');
 	});
 
+	//loads default without pID given
 	function loadDefaultProjectNav(){
 		var innerHTML='';
 		for(var i=1;i<=Object.keys(globalData).length;i++){
 			if(i==1){
+				innerHTML+='<li class="p-nav active" id="project' + i + '">' +globalData['project'+i]['title']+ '</li>';
+			}
+			else{
+				innerHTML+='<li class="p-nav" id="project' + i + '">' +globalData['project'+i]['title']+ '</li>';
+			}
+		}
+		// console.log('projects-nav \n'+innerHTML);
+		$('.projects-nav').html(innerHTML);
+	}
+
+	//loads when projectID is given
+	function loadProjectNavHasID(projectID){
+		var innerHTML='';
+		var pID=projectID.split("project");
+		for(var i=1;i<=Object.keys(globalData).length;i++){
+			if(i==pID[1]){
 				innerHTML+='<li class="p-nav active" id="project' + i + '">' +globalData['project'+i]['title']+ '</li>';
 			}
 			else{
